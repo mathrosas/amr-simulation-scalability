@@ -17,3 +17,11 @@ gui.local.yaml
 # Temporary files
 *.swp
 *~
+
+# Clearpath-generated robot files
+/config/jackal/platform/
+/config/jackal/sensors/
+/config/jackal/manipulators/
+/config/jackal/robot.urdf.xacro
+/config/jackal/robot.srdf
+/config/jackal/robot.srdf.xacro
