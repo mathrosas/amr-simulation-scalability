@@ -1,0 +1,4 @@
+[submodule "ws/src/clearpath_simulator"]
+	path = ws/src/clearpath_simulator
+	url = https://github.com/clearpathrobotics/clearpath_simulator.git
+	branch = jazzy
