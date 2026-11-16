@@ -1,0 +1,42 @@
+services:
+  visualization:
+    image: ghcr.io/clearpathrobotics/clearpath_docker@sha256:970015d533d52c816d1d59ec10cfc2d5df20977b8d8d34c89c67f58ee6543315
+
+    container_name: amr-scalability-visualization
+
+    network_mode: host
+    ipc: host
+
+    gpus: all
+
+    environment:
+      SETUP_PATH: /etc/clearpath
+
+      DISPLAY: ${DISPLAY}
+      XAUTHORITY: /tmp/host.Xauthority
+
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: graphics,utility,compute,display
+      __GLX_VENDOR_LIBRARY_NAME: nvidia
+
+      ROS_DOMAIN_ID: "0"
+
+    volumes:
+      - ./config/jackal:/etc/clearpath:ro
+      - ./config/rviz/config.rviz:/home/robot/config.rviz:ro
+
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY}:/tmp/host.Xauthority:ro
+
+    entrypoint: ["/bin/bash", "-lc"]
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 run rviz2 rviz2
+        -d /home/robot/config.rviz
+        --ros-args
+        -r __ns:=/j100_0000
+        -r /tf:=tf
+        -r /tf_static:=tf_static
+        -p use_sim_time:=true
