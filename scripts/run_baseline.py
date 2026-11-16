@@ -112,6 +112,62 @@ def save_csv(path, rows):
         writer.writeheader()
         writer.writerows(rows)
 
+def collect_sensor_monitor(
+    output_dir,
+    duration,
+    start_utc_ns,
+    status,
+):
+    """Run the ROS 2 sensor monitor inside Docker."""
+
+    command = [
+        "docker",
+        "compose",
+        "exec",
+        "-T",
+        "-e",
+        f"MONITOR_DURATION_S={duration}",
+        "-e",
+        f"MONITOR_START_UTC_NS={start_utc_ns}",
+        "simulation",
+        "bash",
+        "-lc",
+        (
+            "source /opt/ros/jazzy/setup.bash && "
+            "python3 -"
+        ),
+    ]
+
+    try:
+        with (
+            Path("scripts/ros_sensor_monitor.py").open("r")
+            as source,
+
+            (output_dir / "sensor_timing.csv").open(
+                "w", newline=""
+            ) as output,
+
+            (output_dir / "sensor_monitor.log").open("w")
+            as log,
+        ):
+            result = subprocess.run(
+                command,
+                stdin=source,
+                stdout=output,
+                stderr=log,
+                text=True,
+                timeout=duration + 30,
+                check=False,
+            )
+
+        status["exit_code"] = result.returncode
+
+    except (
+        OSError,
+        subprocess.TimeoutExpired,
+    ) as exc:
+        status["error"] = str(exc)
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -124,6 +180,12 @@ def main():
 
     parser.add_argument(
         "--interval", type=float, default=2.0
+    )
+
+    parser.add_argument(
+        "--with-sensors",
+        action="store_true",
+        help="Collect ROS 2 sensor timing measurements.",
     )
 
     args = parser.parse_args()
@@ -168,6 +230,48 @@ def main():
 
     rtf_samples = []
     resource_samples = []
+
+    sensor_thread = None
+    sensor_start_utc_ns = None
+
+    sensor_status = {
+        "exit_code": None,
+        "error": None,
+    }
+
+    if args.with_sensors:
+
+        sensor_warmup_s = 8
+
+        sensor_start_utc_ns = (
+            time.time_ns()
+            + sensor_warmup_s * 1_000_000_000
+        )
+
+        sensor_thread = threading.Thread(
+            target=collect_sensor_monitor,
+            args=(
+                output_dir,
+                args.duration,
+                sensor_start_utc_ns,
+                sensor_status,
+            ),
+        )
+
+        sensor_thread.start()
+
+        print(
+            f"Sensor discovery warm-up: "
+            f"{sensor_warmup_s} seconds",
+            flush=True,
+        )
+
+        remaining = (
+            sensor_start_utc_ns - time.time_ns()
+        ) / 1_000_000_000
+
+        if remaining > 0:
+            time.sleep(remaining)
 
     start_utc = utc_now()
     start = time.monotonic()
@@ -290,6 +394,33 @@ def main():
             reader.join(timeout=5)
             process.stdout.close()
 
+    sensor_counts = {}
+
+    if sensor_thread is not None:
+
+        sensor_thread.join()
+
+        try:
+            with (
+                output_dir / "sensor_timing.csv"
+            ).open(newline="") as file:
+
+                reader = csv.DictReader(file)
+
+                for row in reader:
+                    stream = row["stream"]
+
+                    sensor_counts[stream] = (
+                        sensor_counts.get(stream, 0) + 1
+                    )
+
+        except (
+            OSError,
+            csv.Error,
+            KeyError,
+        ) as exc:
+            sensor_status["error"] = str(exc)
+
     save_csv(
         output_dir / "rtf.csv",
         rtf_samples,
@@ -315,6 +446,13 @@ def main():
         "resource_samples": len(resource_samples),
         "gazebo_command_exit_code": code,
         "resource_error": error,
+        "sensor_monitor_enabled": args.with_sensors,
+        "sensor_start_utc_ns": sensor_start_utc_ns,
+        "sensor_monitor_exit_code":
+            sensor_status["exit_code"],
+        "sensor_monitor_error":
+            sensor_status["error"],
+        "sensor_messages": sensor_counts,
     }
 
     (
@@ -332,6 +470,28 @@ def main():
     print(
         f"Resource samples:   {len(resource_samples)}"
     )
+
+    if args.with_sensors:
+
+        total_messages = sum(
+            sensor_counts.values()
+        )
+
+        print(
+            f"Sensor messages:    {total_messages}"
+        )
+
+        print(
+            f"Sensor exit code:   "
+            f"{sensor_status['exit_code']}"
+        )
+
+        for stream, count in sorted(
+            sensor_counts.items()
+        ):
+            print(
+                f"  {stream}: {count}"
+            )
 
     if rtf_samples:
         values = [
@@ -356,11 +516,32 @@ def main():
 
     print(f"Saved in: {output_dir}")
 
+    expected_streams = {
+        "lidar",
+        "odom_raw",
+        "odom_filtered",
+        "imu",
+        "joint_states",
+    }
+
+    sensor_incomplete = (
+        args.with_sensors
+        and (
+            sensor_status["error"] is not None
+            or sensor_status["exit_code"] != 0
+            or any(
+                sensor_counts.get(stream, 0) == 0
+                for stream in expected_streams
+            )
+        )
+    )
+
     if (
         error
         or code not in (0, 124)
         or not rtf_samples
         or not resource_samples
+        or sensor_incomplete
     ):
         raise SystemExit(
             f"Incomplete run: "

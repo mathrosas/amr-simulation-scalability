@@ -1,0 +1,7 @@
+
+===== SENSOR MONITOR RESULTS =====
+lidar: 400 messages
+odom_raw: 476 messages
+odom_filtered: 500 messages
+imu: 500 messages
+joint_states: 476 messages
