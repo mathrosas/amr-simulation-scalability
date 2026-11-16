@@ -1,0 +1,16 @@
+{
+  "experiment": "001_single_robot_idle_gui",
+  "started_utc": "2026-11-16T10:50:45.100+00:00",
+  "finished_utc": "2026-11-16T10:50:55.334+00:00",
+  "requested_duration_s": 10,
+  "resource_interval_s": 2.0,
+  "robot_count": 1,
+  "robot": "Clearpath Jackal J100",
+  "lidar_enabled": true,
+  "gui_enabled": true,
+  "gazebo_stats_topic": "/world/warehouse/stats",
+  "rtf_samples": 98,
+  "resource_samples": 5,
+  "gazebo_command_exit_code": 124,
+  "resource_error": null
+}

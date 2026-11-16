@@ -25,3 +25,7 @@ gui.local.yaml
 /config/jackal/robot.urdf.xacro
 /config/jackal/robot.srdf
 /config/jackal/robot.srdf.xacro
+
+# Python-generated files
+__pycache__/
+*.py[cod]
