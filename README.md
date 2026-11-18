@@ -257,8 +257,7 @@ docker compose \
 
 The Gazebo model cache is stored in a persistent Docker volume.
 
-The visualization configuration and experimental results are stored
-in the repository independently of the running containers.
+The visualization configuration and experimental results are stored in the repository independently of the running containers.
 
 ## 5. Experimental Results
 
