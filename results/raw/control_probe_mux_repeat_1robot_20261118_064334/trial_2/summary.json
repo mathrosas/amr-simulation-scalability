@@ -1,0 +1,19 @@
+{
+  "namespace": "/j100_0000",
+  "requested_speed_mps": 0.1,
+  "requested_duration_wall_s": 2.0,
+  "target_rate_hz": 20.0,
+  "motion": {
+    "commands_published": 40,
+    "elapsed_wall_s": 2.0001102860001083,
+    "elapsed_sim_s": 2.001
+  },
+  "motion_controller_samples": 95,
+  "motion_odom_samples": 95,
+  "mean_controller_velocity_mps": 0.09915789473684211,
+  "mean_odometry_velocity_mps": 0.09340877192671485,
+  "mean_stopping_odometry_velocity_mps": 0.005895833336427581,
+  "ideal_commanded_distance_m": 0.2001,
+  "odom_displacement_m": 0.1981560000004121,
+  "error": null
+}

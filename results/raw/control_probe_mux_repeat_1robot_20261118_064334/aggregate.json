@@ -1,0 +1,113 @@
+{
+  "experiment": "results/raw/control_probe_mux_repeat_1robot_20261118_064334",
+  "total_trials": 3,
+  "successful_trials": 3,
+  "failed_trials": [],
+  "requested_speed_mps": 0.1,
+  "metrics": {
+    "command_rate_hz": {
+      "samples": 3,
+      "mean": 19.954055783074683,
+      "median": 19.952764715013945,
+      "minimum": 19.94979083703181,
+      "maximum": 19.959611797178297,
+      "sample_stddev": 0.005036164920137296
+    },
+    "command_interval_stddev_ms": {
+      "samples": 3,
+      "mean": 0.040708215001601405,
+      "median": 0.045382209328225474,
+      "minimum": 0.0313089308614287,
+      "maximum": 0.045433504815150044,
+      "sample_stddev": 0.008140059248403622
+    },
+    "controller_response_90_ms": {
+      "samples": 3,
+      "mean": 49.58223133333333,
+      "median": 49.623532,
+      "minimum": 49.484427,
+      "maximum": 49.638735,
+      "sample_stddev": 0.08504145175344421
+    },
+    "odometry_response_90_ms": {
+      "samples": 3,
+      "mean": 217.70440266666668,
+      "median": 217.694493,
+      "minimum": 217.542435,
+      "maximum": 217.87628,
+      "sample_stddev": 0.16714296912025023
+    },
+    "mux_stopping_response_ms": {
+      "samples": 3,
+      "mean": 0.17913133333333334,
+      "median": 0.18005,
+      "minimum": 0.170516,
+      "maximum": 0.186828,
+      "sample_stddev": 0.00819471154668261
+    },
+    "controller_stopping_response_ms": {
+      "samples": 3,
+      "mean": 23.415388333333333,
+      "median": 23.33099,
+      "minimum": 23.239038,
+      "maximum": 23.676137,
+      "sample_stddev": 0.2304478096062824
+    },
+    "odometry_stopping_response_ms": {
+      "samples": 3,
+      "mean": 212.55242166666667,
+      "median": 212.670033,
+      "minimum": 212.310611,
+      "maximum": 212.676621,
+      "sample_stddev": 0.2094400852781885
+    },
+    "steady_state_odometry_mps": {
+      "samples": 3,
+      "mean": 0.1000603864742807,
+      "median": 0.10000000000086845,
+      "minimum": 0.10000000000082651,
+      "maximum": 0.10018115942114714,
+      "sample_stddev": 0.00010459244007624316
+    },
+    "steady_state_odometry_mae_mps": {
+      "samples": 3,
+      "mean": 9.661835831780298e-05,
+      "median": 8.684484291119633e-13,
+      "minimum": 8.265043239180406e-13,
+      "maximum": 0.00028985507325845615,
+      "sample_stddev": 0.00016734790408245764
+    },
+    "final_max_abs_velocity_mps": {
+      "samples": 3,
+      "mean": 2.2734242457650054e-16,
+      "median": 2.240601422855002e-16,
+      "minimum": 1.9637076437363673e-16,
+      "maximum": 2.6159636707036467e-16,
+      "sample_stddev": 3.273644520356802e-17
+    },
+    "displacement_m": {
+      "samples": 3,
+      "mean": 0.19824000000134934,
+      "median": 0.19828200000109075,
+      "minimum": 0.1981560000004121,
+      "maximum": 0.19828200000254514,
+      "sample_stddev": 7.2746134729552e-05
+    },
+    "displacement_error_pct": {
+      "samples": 3,
+      "mean": -0.9295352317094769,
+      "median": -0.9085457265913282,
+      "minimum": -0.971514242672607,
+      "maximum": -0.9085457258644956,
+      "sample_stddev": 0.03635488991981612
+    },
+    "effective_motion_rtf": {
+      "samples": 3,
+      "mean": 1.0004412465993984,
+      "median": 1.000442534080535,
+      "minimum": 1.0004363732471113,
+      "maximum": 1.0004448324705488,
+      "sample_stddev": 4.374108028984407e-06
+    }
+  }
+}

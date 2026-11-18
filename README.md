@@ -96,7 +96,7 @@ Validation includes:
 - Confirming sensor-data publication.
 - Establishing reliable performance-measurement procedures.
 
-**Status:** Functional validation completed. Performance measurement validation and warehouse collision verification remain pending.
+**Status:** Functional validation and automated performance measurement validation completed. Warehouse collision verification remains pending.
 
 ### Phase 2 — Single-Robot Performance Baseline
 
@@ -224,13 +224,41 @@ source /opt/ros/jazzy/setup.bash
 
 ROS 2 commands can then be executed without installing ROS on the host.
 
-### Stop the Simulation
+### Independent RViz2 Visualization
+
+Start the visualization service while the simulation is running:
 
 ```bash
-docker compose down
+docker compose \
+  -f compose.yaml \
+  -f compose.visualization.yaml \
+  up -d --no-deps visualization
 ```
 
-The Gazebo model cache is stored in a Docker volume and is preserved unless explicitly removed.
+Stop visualization independently:
+
+```bash
+docker compose \
+  -f compose.yaml \
+  -f compose.visualization.yaml \
+  stop visualization
+```
+
+### Stop the Simulation
+
+Gracefully stop both services without removing their containers:
+
+```bash
+docker compose \
+  -f compose.yaml \
+  -f compose.visualization.yaml \
+  stop -t 45
+```
+
+The Gazebo model cache is stored in a persistent Docker volume.
+
+The visualization configuration and experimental results are stored
+in the repository independently of the running containers.
 
 ## 5. Experimental Results
 
@@ -367,6 +395,189 @@ This establishes a functional foundation for subsequent benchmarking.
 
 **No conclusions about multi-robot scalability, command latency, or performance degradation can yet be drawn from this experiment.**
 
+### Milestone 3 — Automated Single-Robot Baseline
+
+**Dates:** November 16–18, 2026
+**Status:** Completed.
+
+#### Simulation Performance and Resource Monitoring
+
+Automated collection tools were developed to measure Gazebo real-time factor, CPU utilization, memory consumption, and GPU utilization.
+
+The unified baseline runner combines simulation statistics, resource measurements, and optional ROS 2 sensor timing measurements.
+
+Relevant scripts:
+
+- `scripts/collect_rtf.py`
+- `scripts/collect_resources.py`
+- `scripts/run_baseline.py`
+
+#### ROS 2 Sensor Timing
+
+Automated monitoring was implemented for:
+
+- LiDAR.
+- Raw odometry.
+- Filtered odometry.
+- IMU.
+- Joint states.
+
+Measurements include message arrival timestamps, ROS message header timestamps, arrival intervals, and message timestamp intervals.
+
+Relevant scripts:
+
+- `scripts/ros_sensor_monitor.py`
+- `scripts/analyze_sensor_timing.py`
+
+#### DDS Communication Benchmark
+
+A controlled same-host ROS 2 publisher/subscriber benchmark was implemented to measure application-level communication performance.
+
+The benchmark records latency, message delivery, missing messages, duplicate messages, and message ordering.
+
+Three repeatability trials were conducted using Reliable QoS.
+
+The DDS benchmark is independent of robot motion and should not be interpreted as a measurement of complete robot-control latency.
+
+Relevant scripts:
+
+- `scripts/dds_probe.py`
+- `scripts/analyze_dds_probe.py`
+
+#### Automated Motion-Control Benchmark
+
+A motion-control probe was developed to evaluate the response of the Clearpath Jackal to repeatable velocity commands.
+
+Four observation points are included in the final implementation:
+
+| Stream | Observation point |
+|---|---|
+| Requested command | Local velocity publication |
+| Multiplexer output | `/j100_0000/platform/cmd_vel` |
+| Controller output | `/j100_0000/platform_velocity_controller/cmd_vel_out` |
+| Odometry | `/j100_0000/platform/odom` |
+
+The probe records monotonic wall-clock timestamps, simulation time, ROS message header timestamps, velocity, and odometry position.
+
+The controller was verified to use feedback-based odometry
+(`open_loop=false`).
+
+##### Experimental Configuration
+
+| Parameter | Value |
+|---|---|
+| Robot count | 1 |
+| Linear velocity | 0.10 m/s |
+| Angular velocity | 0 rad/s |
+| Command publication frequency | 20 Hz |
+| Initial stationary period | 1 s |
+| Movement duration | 2 s (wall time) |
+| Stopping observation period | 2 s |
+| Controller command timeout | 0.5 s |
+| Gazebo GUI | Enabled |
+| RViz2 | Disabled during repeatability trials |
+| Nav2 | Not running |
+| Open-RMF | Not running |
+
+One functional smoke test and two sets of three repeatability trials were conducted.
+
+The initial smoke test was conducted with RViz2 running. The repeatability datasets were collected with RViz2 stopped.
+
+The second repeatability dataset included multiplexer instrumentation.
+
+##### Instrumented Repeatability Results
+
+Results from three trials:
+
+| Metric | Mean | Sample standard deviation |
+|---|---:|---:|
+| Command frequency (Hz) | 19.9541 | 0.0050 |
+| Controller 90% response (ms) | 49.582 | 0.085 |
+| Odometry 90% response (ms) | 217.704 | 0.167 |
+| Multiplexer stopping response (ms) | 0.179 | 0.008 |
+| Controller stopping response (ms) | 23.415 | 0.230 |
+| Odometry stopping response (ms) | 212.552 | 0.209 |
+| Steady-state odometry velocity (m/s) | 0.100060 | 0.000105 |
+| Odometry displacement (mm) | 198.240 | 0.073 |
+| Displacement error (%) | -0.930 | 0.036 |
+| Effective motion RTF | 1.000441 | 0.000004 |
+
+All three instrumented trials completed successfully and reached effectively zero odometry velocity during the final observation window.
+
+##### Stopping Anomaly
+
+One trial in the original repeatability dataset exhibited an unexpected stopping delay.
+
+The controller continued reporting approximately 0.10 m/s for approximately 250 ms after zero-velocity commands began.
+
+The observed odometry stopping response was 465.116 ms, compared with approximately 212.5 ms in the other two original trials.
+
+Odometry displacement increased from approximately 198.3 mm to 223.5 mm.
+
+Inspection of the recorded velocity profiles indicated that the additional delay occurred before the controller output decreased, rather than during the subsequent odometry deceleration.
+
+Multiplexer monitoring was subsequently added to improve visibility into the command pipeline.
+
+The anomaly did not recur in the three instrumented trials.
+
+Its underlying cause remains undetermined. All experimental results, including the anomalous trial, are retained.
+
+##### Experimental Limitations
+
+- Odometry is not independent Gazebo ground truth.
+- Observed response times include communication, processing, controller updates, simulated dynamics, and callback scheduling.
+- The experiments do not measure pure DDS latency through the complete robot-control pipeline.
+- Displacement includes the deceleration period.
+- Starting poses were not reset between consecutive trials.
+- Three trials per configuration provide preliminary repeatability measurements, not statistically established reliability limits.
+- These results do not establish multi-robot scalability.
+
+##### Scripts and Datasets
+
+Relevant scripts:
+
+- `scripts/control_probe.py`
+- `scripts/analyze_control_probe.py`
+- `scripts/analyze_control_repeat.py`
+
+Experimental datasets:
+
+- `results/raw/control_probe_smoke_1robot_20261118_061410/`
+- `results/raw/control_probe_repeat_1robot_20261118_061938/`
+- `results/raw/control_probe_mux_repeat_1robot_20261118_064334/`
+
+Individual experiments contain raw CSV measurements and JSON analysis.
+Repeated experiments also include aggregate descriptive statistics.
+
+#### Independent RViz2 Visualization
+
+RViz2 was validated using the Clearpath visualization configuration.
+
+The following functionality was verified:
+
+- Jackal robot model visualization.
+- Namespaced TF transformations.
+- Simulation clock synchronization.
+- LiDAR visualization.
+- Simultaneous Gazebo and RViz2 operation.
+- Independent visualization service startup and shutdown.
+
+RViz2 runs in a separate Docker container using the same pinned
+Clearpath image as the simulation.
+
+Configuration files:
+
+- `compose.visualization.yaml`
+- `config/rviz/config.rviz`
+
+Visualization is disabled during standard performance experiments unless its computational overhead is an experimental variable.
+
+#### Conclusion
+
+The automated single-robot baseline establishes reference measurements for simulation performance, resource consumption, sensor timing, communication, and motion-control responsiveness.
+
+The next development stage introduces autonomous navigation through Nav2, followed by multi-robot simulation and Open-RMF coordination.
+
 ## 6. Current Project Status
 
 | Milestone | Status |
@@ -374,12 +585,20 @@ This establishes a functional foundation for subsequent benchmarking.
 | 0 — Repository Initialization | Completed |
 | 1 — Container Environment Configuration | Completed |
 | 2 — Single-Robot Functional Validation | Completed |
-| 3 — Automated Single-Robot Baseline | Planned |
-| 4 — Multi-Robot Scaling | Planned |
+| 3A — RTF and Resource Monitoring | Completed |
+| 3B — Automated Sensor Monitoring | Completed |
+| 3C — ROS 2 Graph Validation | Completed |
+| 3D — DDS Communication Benchmarking | Completed |
+| 3E — Automated Motion-Control Benchmarking | Completed |
+| 3F — Independent RViz2 Visualization | Completed |
+| 3G — Nav2 Autonomous Navigation | Next |
+| 4A — Two-Robot Simulation | Planned |
+| 4B — Open-RMF Fleet Coordination | Planned |
+| 4C — Incremental Fleet Scalability | Planned |
 | 5 — Bottleneck Investigation | Planned |
 | 6 — Analysis and Research Report | Planned |
 
-**Next objective:** Implement automated, reproducible single-robot performance measurements.
+**Next objective:** Integrate Nav2 into the existing containerized environment and validate autonomous navigation with a single Jackal before introducing additional robots and Open-RMF fleet coordination.
 
 ## 7. Reproducibility and Future Deliverables
 

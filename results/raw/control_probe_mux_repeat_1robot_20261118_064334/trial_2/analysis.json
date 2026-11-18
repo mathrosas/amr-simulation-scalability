@@ -1,0 +1,86 @@
+{
+  "experiment": "results/raw/control_probe_mux_repeat_1robot_20261118_064334/trial_2",
+  "requested_speed_mps": 0.1,
+  "command_timing": {
+    "commands": 40,
+    "mean_interval_ms": 50.11836776923077,
+    "minimum_interval_ms": 50.042242,
+    "maximum_interval_ms": 50.28674,
+    "interval_stddev_ms": 0.045382209328225474,
+    "observed_rate_hz": 19.952764715013945
+  },
+  "motion_phase": {
+    "controller": {
+      "samples": 95,
+      "mean_mps": 0.09915789473684211,
+      "minimum_mps": 0.036,
+      "maximum_mps": 0.1,
+      "mean_absolute_error_mps": 0.0008421052631578949,
+      "mean_bias_pct": -0.842105263157894
+    },
+    "odometry": {
+      "samples": 95,
+      "mean_mps": 0.09340877192671485,
+      "minimum_mps": -2.6159636707036467e-16,
+      "maximum_mps": 0.10166666666842097,
+      "mean_absolute_error_mps": 0.006819298248803136,
+      "mean_bias_pct": -6.59122807328516
+    }
+  },
+  "steady_state": {
+    "window_s": 0.5,
+    "controller": {
+      "samples": 23,
+      "mean_mps": 0.1,
+      "minimum_mps": 0.1,
+      "maximum_mps": 0.1,
+      "mean_absolute_error_mps": 0.0,
+      "mean_bias_pct": 0.0
+    },
+    "odometry": {
+      "samples": 23,
+      "mean_mps": 0.10018115942114714,
+      "minimum_mps": 0.09875000000071976,
+      "maximum_mps": 0.10166666666842097,
+      "mean_absolute_error_mps": 0.00028985507325845615,
+      "mean_bias_pct": 0.18115942114713124
+    }
+  },
+  "observed_response": {
+    "controller_10_pct_ms": 7.685357,
+    "controller_90_pct_ms": 49.623532,
+    "odometry_10_pct_ms": 49.864193,
+    "odometry_90_pct_ms": 217.694493
+  },
+  "stop_pipeline": {
+    "threshold_mps": 0.005000000000000001,
+    "mux_motion_samples": 40,
+    "mux_stopping_samples": 40,
+    "controller_stopping_samples": 96,
+    "mux_response_ms": 0.186828,
+    "controller_response_ms": 23.676137,
+    "odometry_response_ms": 212.676621
+  },
+  "stopping": {
+    "threshold_mps": 0.005000000000000001,
+    "first_below_threshold_ms": 212.676621,
+    "final_window_s": 0.5,
+    "final_velocity": {
+      "samples": 24,
+      "mean_mps": -1.9637076437363673e-16,
+      "minimum_mps": -1.9637076437363673e-16,
+      "maximum_mps": -1.9637076437363673e-16,
+      "mean_absolute_error_mps": 1.9637076437363673e-16,
+      "mean_bias_pct": null
+    },
+    "final_max_abs_velocity_mps": 1.9637076437363673e-16
+  },
+  "displacement": {
+    "ideal_m": 0.2001,
+    "measured_m": 0.1981560000004121,
+    "signed_error_m": -0.0019439999995878865,
+    "signed_error_pct": -0.971514242672607
+  },
+  "effective_motion_rtf": 1.0004448324705488,
+  "experiment_error": null
+}
