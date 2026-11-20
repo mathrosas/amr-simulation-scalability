@@ -1,0 +1,82 @@
+[bt_navigator-6] [INFO] [1795192554.185491384] [j100_0000.bt_navigator]: Begin navigating from current location (-0.02, -0.03) to (-1.29, -3.16)
+[controller_server-1] [INFO] [1795192554.206281921] [j100_0000.controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [WARN] [1795192554.206313842] [j100_0000.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-1] [WARN] [1795192554.206321998] [j100_0000.controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[controller_server-1] [INFO] [1795192555.256428220] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192556.306429044] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192557.306429188] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192558.356429187] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192559.356428416] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192560.406429655] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192561.406427839] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192562.456572357] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192563.456431945] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192564.506433618] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192565.506429233] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192566.556427937] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192567.556431775] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [WARN] [1795192568.184054530] [j100_0000.controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 333.3333 Hz.
+[controller_server-1] [INFO] [1795192568.584516017] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192569.634522336] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192570.634518201] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192571.684522814] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192572.684516762] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192573.734515942] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192574.734515398] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192575.784517560] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1795192575.934599209] [j100_0000.controller_server]: Failed to make progress
+[controller_server-1] [INFO] [1795192575.935960866] [j100_0000.controller_server]: Optimizer reset
+[controller_server-1] [WARN] [1795192575.935986575] [j100_0000.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1795192575.954417940] [j100_0000.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1795192575.954799738] [j100_0000.controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [WARN] [1795192576.138888128] [j100_0000.controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 5.4645 Hz.
+[controller_server-1] [INFO] [1795192576.788985267] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192577.838987367] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192578.838985016] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192579.888985861] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192580.888986573] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192581.938985240] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192582.938984699] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192583.988985018] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192584.988987038] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192586.038987484] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192587.038986307] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192588.088989746] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192589.088988326] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192590.138985982] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192591.138985552] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192592.188985169] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192593.188985079] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192594.238941190] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192595.238988548] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192596.288940009] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192597.288985641] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192598.338951517] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192599.338986969] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192600.388987869] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192601.388988793] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192602.438985343] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192603.438987879] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192604.488957646] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192605.488950241] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192606.538985180] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192607.538985007] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192608.538938822] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192609.588987108] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192610.638984732] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192611.638989175] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192612.688985365] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192613.688989496] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192614.738984230] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192615.738985455] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192616.788987051] [j100_0000.controller_server]: Passing new path to controller.
+[collision_monitor-9] [ERROR] [1795192617.023987795] [getTransform]: Failed to get "lidar2d_0_laser"->"base_link" frame transform: Lookup would require extrapolation into the future.  Requested time 117.543000 but the latest data is at time 117.540000, when looking up transform from frame [odom] to frame [base_link]
+[collision_monitor-9] [WARN] [1795192617.024033832] [j100_0000.collision_monitor]: Robot to stop due to invalid source. Either due to data not published yet, or to lack of new data received within the sensor timeout, or if impossible to transform data to base frame
+[controller_server-1] [INFO] [1795192617.078592020] [j100_0000.local_costmap.local_costmap]: Message Filter dropping message: frame 'lidar2d_0_laser' at time 117.501 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1795192617.078592100] [j100_0000.global_costmap.global_costmap]: Message Filter dropping message: frame 'lidar2d_0_laser' at time 117.501 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[collision_monitor-9] [INFO] [1795192617.173997830] [j100_0000.collision_monitor]: Robot to continue normal operation
+[controller_server-1] [INFO] [1795192617.788986461] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192618.838985690] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795192619.189010803] [j100_0000.controller_server]: Reached the goal!
+[controller_server-1] [INFO] [1795192619.189340562] [j100_0000.controller_server]: Optimizer reset
+[bt_navigator-6] [INFO] [1795192619.214023255] [j100_0000.bt_navigator]: Goal succeeded

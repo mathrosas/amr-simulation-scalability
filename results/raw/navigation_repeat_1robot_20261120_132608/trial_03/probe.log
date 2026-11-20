@@ -1,0 +1,84 @@
+[INFO] [1795192551.410433504] [j100_0000.amr_navigation_probe]: Waiting for clock, TF, odometry and action servers
+[INFO] [1795192554.173715061] [j100_0000.amr_navigation_probe]: Navigation interfaces ready
+[INFO] [1795192554.174104975] [j100_0000.amr_navigation_probe]: Requesting global path
+[INFO] [1795192554.184600554] [j100_0000.amr_navigation_probe]: Planning succeeded: 6.061 m
+[INFO] [1795192554.184930564] [j100_0000.amr_navigation_probe]: Sending navigation goal
+{
+  "namespace": "j100_0000",
+  "goal": {
+    "x": -1.2874,
+    "y": -3.1625,
+    "yaw_rad": 0.0,
+    "frame_id": "map"
+  },
+  "execution_enabled": true,
+  "sample_rate_hz": 10.0,
+  "planning": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0007186709999587038,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 0.009148541000286059,
+    "client_sim_duration_s": 0.006,
+    "reported_planning_time_s": 0.003,
+    "pose_count": 242,
+    "path_length_m": 6.061451227120833,
+    "direct_distance_m": 3.368242554167501,
+    "path_length_ratio": 1.7995886963725476
+  },
+  "navigation": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0003821600002993364,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 65.02910488500038,
+    "client_sim_duration_s": 64.953
+  },
+  "requires_manual_stop": false,
+  "completed": true,
+  "initial_map_pose": {
+    "stamp_ns": 54960000000,
+    "x": -0.014122542054673247,
+    "y": -0.034610785798695164,
+    "yaw_rad": -0.004251533772313382
+  },
+  "initial_odometry": {
+    "stamp_ns": 54978000000,
+    "x": -6.101989737348862e-17,
+    "y": 5.3240717697847106e-34,
+    "yaw_rad": -2.035396698885884e-17,
+    "linear_x_mps": -1.0935736195061744e-18,
+    "angular_z_radps": -8.71638680146872e-19
+  },
+  "final_map_pose": {
+    "stamp_ns": 121920000000,
+    "x": -1.5472443513859118,
+    "y": -3.180750805646451,
+    "yaw_rad": -0.02928834460123674
+  },
+  "final_odometry": {
+    "stamp_ns": 121926000000,
+    "x": -1.8768762910227736,
+    "y": -3.2787699041612317,
+    "yaw_rad": -0.06437296723090802,
+    "linear_x_mps": 2.6438424867163534e-16,
+    "angular_z_radps": -1.7251035955831052e-18
+  },
+  "sample_count": 687,
+  "feedback_count": 6369,
+  "max_recoveries": 1,
+  "odometry_trajectory_length_m": 6.636286370040913,
+  "odometry_trajectory_sample_count": 3135,
+  "last_feedback": {
+    "distance_remaining_m": 0.24274910986423492,
+    "navigation_time_s": 64.929,
+    "number_of_recoveries": 1
+  },
+  "final_estimated_position_error_m": 0.2604845078961696,
+  "final_estimated_yaw_error_rad": -0.029288344601236742,
+  "stationary": true
+}

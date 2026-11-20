@@ -1,0 +1,381 @@
+{
+  "namespace": "j100_0000",
+  "goal": {
+    "x": 0.0,
+    "y": 0.0,
+    "yaw_rad": 0.0,
+    "frame_id": "map"
+  },
+  "map_world_alignment_assumed": true,
+  "experiment_count": 1,
+  "successful_runs": 1,
+  "failed_runs": 0,
+  "success_rate": 1.0,
+  "planning_success": {
+    "passed": 1,
+    "failed": 0,
+    "unknown": 0,
+    "evaluated": 1,
+    "rate": 1.0
+  },
+  "navigation_action_success": {
+    "passed": 1,
+    "failed": 0,
+    "unknown": 0,
+    "evaluated": 1,
+    "rate": 1.0
+  },
+  "stationary_at_completion": {
+    "passed": 1,
+    "failed": 0,
+    "unknown": 0,
+    "evaluated": 1,
+    "rate": 1.0
+  },
+  "goal_tolerance_compliance_successful_runs": {
+    "estimated_pose": {
+      "passed": 1,
+      "failed": 0,
+      "unknown": 0,
+      "evaluated": 1,
+      "rate": 1.0
+    },
+    "ground_truth_pose": {
+      "passed": 0,
+      "failed": 1,
+      "unknown": 0,
+      "evaluated": 1,
+      "rate": 0.0
+    }
+  },
+  "performance_successful_runs": {
+    "planning_time_s": {
+      "count": 1,
+      "mean": 0.003,
+      "median": 0.003,
+      "min": 0.003,
+      "max": 0.003,
+      "stdev": null
+    },
+    "planning_client_duration_s": {
+      "count": 1,
+      "mean": 0.005103638000036881,
+      "median": 0.005103638000036881,
+      "min": 0.005103638000036881,
+      "max": 0.005103638000036881,
+      "stdev": null
+    },
+    "planning_acceptance_latency_s": {
+      "count": 1,
+      "mean": 0.00040208799964602804,
+      "median": 0.00040208799964602804,
+      "min": 0.00040208799964602804,
+      "max": 0.00040208799964602804,
+      "stdev": null
+    },
+    "planned_path_length_m": {
+      "count": 1,
+      "mean": 5.874368600094362,
+      "median": 5.874368600094362,
+      "min": 5.874368600094362,
+      "max": 5.874368600094362,
+      "stdev": null
+    },
+    "planned_path_length_ratio": {
+      "count": 1,
+      "mean": 1.6521320609102832,
+      "median": 1.6521320609102832,
+      "min": 1.6521320609102832,
+      "max": 1.6521320609102832,
+      "stdev": null
+    },
+    "navigation_wall_duration_s": {
+      "count": 1,
+      "mean": 61.3852742199997,
+      "median": 61.3852742199997,
+      "min": 61.3852742199997,
+      "max": 61.3852742199997,
+      "stdev": null
+    },
+    "navigation_sim_duration_s": {
+      "count": 1,
+      "mean": 61.293,
+      "median": 61.293,
+      "min": 61.293,
+      "max": 61.293,
+      "stdev": null
+    },
+    "navigation_acceptance_latency_s": {
+      "count": 1,
+      "mean": 0.0004420139994181227,
+      "median": 0.0004420139994181227,
+      "min": 0.0004420139994181227,
+      "max": 0.0004420139994181227,
+      "stdev": null
+    },
+    "navigation_effective_rtf": {
+      "count": 1,
+      "mean": 0.9984968020234136,
+      "median": 0.9984968020234136,
+      "min": 0.9984968020234136,
+      "max": 0.9984968020234136,
+      "stdev": null
+    },
+    "feedback_rate_hz": {
+      "count": 1,
+      "mean": 99.94253634858211,
+      "median": 99.94253634858211,
+      "min": 99.94253634858211,
+      "max": 99.94253634858211,
+      "stdev": null
+    },
+    "odometry_trajectory_length_m": {
+      "count": 1,
+      "mean": 6.1417088144237315,
+      "median": 6.1417088144237315,
+      "min": 6.1417088144237315,
+      "max": 6.1417088144237315,
+      "stdev": null
+    },
+    "sampled_map_trajectory_length_m": {
+      "count": 1,
+      "mean": 6.319644308606557,
+      "median": 6.319644308606557,
+      "min": 6.319644308606557,
+      "max": 6.319644308606557,
+      "stdev": null
+    },
+    "odometry_to_planned_length_ratio": {
+      "count": 1,
+      "mean": 1.0455096083560496,
+      "median": 1.0455096083560496,
+      "min": 1.0455096083560496,
+      "max": 1.0455096083560496,
+      "stdev": null
+    },
+    "average_odometry_speed_mps": {
+      "count": 1,
+      "mean": 0.09703614640519065,
+      "median": 0.09703614640519065,
+      "min": 0.09703614640519065,
+      "max": 0.09703614640519065,
+      "stdev": null
+    },
+    "telemetry_rate_hz": {
+      "count": 1,
+      "mean": 9.851936900150648,
+      "median": 9.851936900150648,
+      "min": 9.851936900150648,
+      "max": 9.851936900150648,
+      "stdev": null
+    },
+    "telemetry_interval_stdev_ms": {
+      "count": 1,
+      "mean": 0.7608889818343272,
+      "median": 0.7608889818343272,
+      "min": 0.7608889818343272,
+      "max": 0.7608889818343272,
+      "stdev": null
+    },
+    "mean_absolute_linear_velocity_mps": {
+      "count": 1,
+      "mean": 0.10000172934416171,
+      "median": 0.10000172934416171,
+      "min": 0.10000172934416171,
+      "max": 0.10000172934416171,
+      "stdev": null
+    },
+    "estimated_position_error_m": {
+      "count": 1,
+      "mean": 0.23573959709950806,
+      "median": 0.23573959709950806,
+      "min": 0.23573959709950806,
+      "max": 0.23573959709950806,
+      "stdev": null
+    },
+    "estimated_yaw_error_rad": {
+      "count": 1,
+      "mean": 0.23073106339433824,
+      "median": 0.23073106339433824,
+      "min": 0.23073106339433824,
+      "max": 0.23073106339433824,
+      "stdev": null
+    },
+    "ground_truth_position_error_m": {
+      "count": 1,
+      "mean": 0.29031576345248633,
+      "median": 0.29031576345248633,
+      "min": 0.29031576345248633,
+      "max": 0.29031576345248633,
+      "stdev": null
+    },
+    "ground_truth_yaw_error_rad": {
+      "count": 1,
+      "mean": 0.26627400000000007,
+      "median": 0.26627400000000007,
+      "min": 0.26627400000000007,
+      "max": 0.26627400000000007,
+      "stdev": null
+    },
+    "localization_position_discrepancy_m": {
+      "count": 1,
+      "mean": 0.1405449000843989,
+      "median": 0.1405449000843989,
+      "min": 0.1405449000843989,
+      "max": 0.1405449000843989,
+      "stdev": null
+    },
+    "localization_yaw_discrepancy_rad": {
+      "count": 1,
+      "mean": 0.03554293660566177,
+      "median": 0.03554293660566177,
+      "min": 0.03554293660566177,
+      "max": 0.03554293660566177,
+      "stdev": null
+    }
+  },
+  "reliability_all_runs": {
+    "recoveries": {
+      "count": 1,
+      "mean": 1,
+      "median": 1,
+      "min": 1,
+      "max": 1,
+      "stdev": null,
+      "total": 1,
+      "missing_runs": 0,
+      "runs_with_event": 1
+    },
+    "progress_failures": {
+      "count": 1,
+      "mean": 1,
+      "median": 1,
+      "min": 1,
+      "max": 1,
+      "stdev": null,
+      "total": 1,
+      "missing_runs": 0,
+      "runs_with_event": 1
+    },
+    "local_costmap_clears": {
+      "count": 1,
+      "mean": 1,
+      "median": 1,
+      "min": 1,
+      "max": 1,
+      "stdev": null,
+      "total": 1,
+      "missing_runs": 0,
+      "runs_with_event": 1
+    },
+    "global_costmap_clears": {
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "stdev": null,
+      "total": 0,
+      "missing_runs": 0,
+      "runs_with_event": 0
+    },
+    "controller_rate_warnings": {
+      "count": 1,
+      "mean": 1,
+      "median": 1,
+      "min": 1,
+      "max": 1,
+      "stdev": null,
+      "total": 1,
+      "missing_runs": 0,
+      "runs_with_event": 1
+    },
+    "local_costmap_tf_drops": {
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "stdev": null,
+      "total": 0,
+      "missing_runs": 0,
+      "runs_with_event": 0
+    },
+    "global_costmap_tf_drops": {
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "stdev": null,
+      "total": 0,
+      "missing_runs": 0,
+      "runs_with_event": 0
+    },
+    "missing_navigation_map_samples": {
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "stdev": null,
+      "total": 0,
+      "missing_runs": 0,
+      "runs_with_event": 0
+    },
+    "missing_navigation_odometry_samples": {
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "stdev": null,
+      "total": 0,
+      "missing_runs": 0,
+      "runs_with_event": 0
+    }
+  },
+  "runs": [
+    {
+      "experiment": "navigation_probe_execution_smoke_1robot_20261120_125340",
+      "directory": "results/raw/navigation_probe_execution_smoke_1robot_20261120_125340",
+      "succeeded": true,
+      "planning_status": "SUCCEEDED",
+      "navigation_status": "SUCCEEDED",
+      "requires_manual_stop": false,
+      "initial_map_pose": {
+        "stamp_ns": 3390540000000,
+        "x": -1.5256536849049915,
+        "y": -3.1788922667975497,
+        "yaw_rad": -0.007822418163934202
+      },
+      "initial_map_pose_difference_from_reference": {
+        "position_m": 0.0,
+        "yaw_rad": 0.0
+      },
+      "initial_ground_truth_difference_from_reference": {
+        "position_m": 0.0,
+        "yaw_rad": 0.0
+      },
+      "navigation_wall_duration_s": 61.3852742199997,
+      "recoveries": 1,
+      "progress_failures": 1,
+      "estimated_position_error_m": 0.23573959709950806,
+      "ground_truth_position_error_m": 0.29031576345248633
+    }
+  ],
+  "warnings": [
+    "Fewer than three experiments: insufficient for meaningful repeatability analysis",
+    "Fewer than two successful experiments: sample standard deviations are unavailable",
+    "Matching destinations do not establish identical simulation or navigation configurations"
+  ],
+  "limitations": [
+    "Performance distributions include successful runs only.",
+    "Reliability distributions include failed and successful runs.",
+    "Missing measurements are not treated as zero.",
+    "Ground-truth comparisons depend on the map/world alignment assumption.",
+    "Initial pose comparisons use the first run as reference.",
+    "Initial pose warning thresholds are diagnostic choices rather than Nav2 requirements.",
+    "Identical Docker, Nav2, middleware and GUI configurations must be verified externally."
+  ]
+}

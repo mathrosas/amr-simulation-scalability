@@ -1,0 +1,131 @@
+{
+  "navigation_window": {
+    "start_elapsed_s": 8.167434389999471,
+    "end_elapsed_s": 72.34641374199964,
+    "duration_s": 64.17897935200017
+  },
+  "rtf_sample_count": 629,
+  "resource_sample_count": 31,
+  "gazebo_rtf": {
+    "count": 629,
+    "mean": 0.9988468725560877,
+    "median": 1.000003000009,
+    "min": 0.5707322780493512,
+    "max": 1.0429906853978523,
+    "stdev": 0.01952593864465317
+  },
+  "resources": {
+    "simulation_cpu_pct": {
+      "count": 31,
+      "mean": 166.95774193548388,
+      "median": 165.1,
+      "min": 125.41,
+      "max": 230.59,
+      "stdev": 29.377039300523737
+    },
+    "simulation_ram_mib": {
+      "count": 31,
+      "mean": 968.474064516129,
+      "median": 952.5,
+      "min": 950.5,
+      "max": 1028.096,
+      "stdev": 21.591821263209038
+    },
+    "simulation_pids": {
+      "count": 31,
+      "mean": 371.7096774193548,
+      "median": 366,
+      "min": 366,
+      "max": 387,
+      "stdev": 7.6515512518142215
+    },
+    "localization_cpu_pct": {
+      "count": 31,
+      "mean": 11.80225806451613,
+      "median": 11.04,
+      "min": 9.02,
+      "max": 18.33,
+      "stdev": 2.285045163196881
+    },
+    "localization_ram_mib": {
+      "count": 31,
+      "mean": 104.92903225806451,
+      "median": 104.8,
+      "min": 104.1,
+      "max": 105.9,
+      "stdev": 0.5355330978797964
+    },
+    "localization_pids": {
+      "count": 31,
+      "mean": 56,
+      "median": 56,
+      "min": 56,
+      "max": 56,
+      "stdev": 0.0
+    },
+    "navigation_cpu_pct": {
+      "count": 31,
+      "mean": 87.90193548387097,
+      "median": 85.59,
+      "min": 71.84,
+      "max": 126.08,
+      "stdev": 14.341967651930897
+    },
+    "navigation_ram_mib": {
+      "count": 31,
+      "mean": 378.36451612903227,
+      "median": 379.2,
+      "min": 375.2,
+      "max": 380.5,
+      "stdev": 1.954575552747411
+    },
+    "navigation_pids": {
+      "count": 31,
+      "mean": 228,
+      "median": 228,
+      "min": 228,
+      "max": 228,
+      "stdev": 0.0
+    },
+    "gpu_pct": {
+      "count": 31,
+      "mean": 36.74193548387097,
+      "median": 37.0,
+      "min": 34.0,
+      "max": 39.0,
+      "stdev": 1.0635707760647266
+    },
+    "gpu_memory_pct": {
+      "count": 31,
+      "mean": 24.322580645161292,
+      "median": 24.0,
+      "min": 23.0,
+      "max": 25.0,
+      "stdev": 0.5408078385892441
+    },
+    "vram_mib": {
+      "count": 31,
+      "mean": 1492.3225806451612,
+      "median": 1492.0,
+      "min": 1482.0,
+      "max": 1502.0,
+      "stdev": 9.481164122526282
+    },
+    "gpu_temp_c": {
+      "count": 31,
+      "mean": 49.45161290322581,
+      "median": 49.0,
+      "min": 49.0,
+      "max": 50.0,
+      "stdev": 0.5058794110206737
+    },
+    "gpu_power_w": {
+      "count": 31,
+      "mean": 23.448387096774194,
+      "median": 23.41,
+      "min": 23.26,
+      "max": 24.35,
+      "stdev": 0.1848981120183682
+    }
+  }
+}

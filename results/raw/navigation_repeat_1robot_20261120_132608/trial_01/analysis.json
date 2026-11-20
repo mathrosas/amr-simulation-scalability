@@ -1,0 +1,250 @@
+{
+  "experiment": "trial_01",
+  "namespace": "j100_0000",
+  "goal": {
+    "x": -1.2874,
+    "y": -3.1625,
+    "yaw_rad": 0.0,
+    "frame_id": "map"
+  },
+  "execution_enabled": true,
+  "completed": true,
+  "requires_manual_stop": false,
+  "planning": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0008178749994840473,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 0.009104206000301929,
+    "client_sim_duration_s": 0.267,
+    "reported_planning_time_s": 0.003,
+    "pose_count": 242,
+    "path_length_m": 6.061451227120833,
+    "direct_distance_m": 3.368242554167501,
+    "path_length_ratio": 1.7995886963725476,
+    "succeeded": true,
+    "csv_pose_count": 242,
+    "csv_path_length_m": 6.061451227120833,
+    "csv_length_matches_summary": true
+  },
+  "navigation": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0004588980000335141,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 64.30098824099969,
+    "client_sim_duration_s": 64.26,
+    "succeeded": true,
+    "effective_rtf": 0.9993625565932819,
+    "feedback_count": 6429,
+    "average_feedback_rate_hz": 99.98291124086849,
+    "max_recoveries": 1
+  },
+  "trajectory": {
+    "planned_length_m": 6.061451227120833,
+    "odometry_length_m": 6.547914735122906,
+    "odometry_sample_count": 3155,
+    "sampled_map_length_m": 6.915495567453442,
+    "sampled_odometry_length_m": 6.547171663014336,
+    "odometry_to_planned_length_ratio": 1.08025528702194,
+    "average_odometry_speed_mps": 0.09882153237432698
+  },
+  "sampling": {
+    "target_rate_hz": 10.0,
+    "all_samples": {
+      "sample_count": 695,
+      "duration_s": 70.635242622,
+      "actual_rate_hz": 9.825123751806116,
+      "interval_ms": {
+        "count": 694,
+        "mean": 101.77988850432277,
+        "median": 101.9448645,
+        "min": 99.984025,
+        "max": 142.973174,
+        "stdev": 2.5101488766101103
+      },
+      "missing_map_pose_samples": 27,
+      "missing_odometry_samples": 27
+    },
+    "navigation": {
+      "sample_count": 633,
+      "duration_s": 64.178979352,
+      "actual_rate_hz": 9.847461059386653,
+      "interval_ms": {
+        "count": 632,
+        "mean": 101.54901796202532,
+        "median": 101.9344965,
+        "min": 99.984025,
+        "max": 107.637673,
+        "stdev": 0.7929480281524774
+      },
+      "missing_map_pose_samples": 0,
+      "missing_odometry_samples": 0
+    },
+    "settling": {
+      "sample_count": 20,
+      "duration_s": 1.958979811,
+      "actual_rate_hz": 9.698925886480206,
+      "interval_ms": {
+        "count": 19,
+        "mean": 103.10420057894737,
+        "median": 102.008397,
+        "min": 101.471842,
+        "max": 117.363872,
+        "stdev": 3.588385218380071
+      },
+      "missing_map_pose_samples": 0,
+      "missing_odometry_samples": 0
+    },
+    "sample_count_matches_summary": true
+  },
+  "velocity": {
+    "navigation": {
+      "absolute_linear_velocity_mps": {
+        "count": 633,
+        "mean": 0.10172752651991633,
+        "median": 0.10730843506661558,
+        "min": 1.544067820431119e-18,
+        "max": 0.16976969714097034,
+        "stdev": 0.047356267934445716
+      },
+      "absolute_angular_velocity_radps": {
+        "count": 633,
+        "mean": 0.07994408491749509,
+        "median": 0.085671493309413,
+        "min": 7.351764893365835e-19,
+        "max": 0.14566708343989682,
+        "stdev": 0.03726126673735701
+      },
+      "stationary_sample_count": 1
+    },
+    "settling": {
+      "absolute_linear_velocity_mps": {
+        "count": 20,
+        "mean": 0.006403352325820931,
+        "median": 2.600763548663114e-16,
+        "min": 2.600763548663114e-16,
+        "max": 0.08202874540034727,
+        "stdev": 0.020501367292843298
+      },
+      "absolute_angular_velocity_radps": {
+        "count": 20,
+        "mean": 0.0003166208871715134,
+        "median": 1.131512588043825e-16,
+        "min": 1.131512588043825e-16,
+        "max": 0.003490320950974064,
+        "stdev": 0.0009801954367713304
+      },
+      "stationary_sample_count": 18
+    },
+    "final_stationary": true
+  },
+  "ground_truth": {
+    "map_world_alignment_assumed": true,
+    "initial_pose": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0635,
+      "roll_rad": -0.0,
+      "pitch_rad": 0.0,
+      "yaw_rad": -0.0
+    },
+    "final_pose": {
+      "x": -1.57289,
+      "y": -3.25283,
+      "z": 0.0635,
+      "roll_rad": -0.0,
+      "pitch_rad": 0.0,
+      "yaw_rad": -0.08081
+    },
+    "endpoint_displacement_m": 3.6131545719772356
+  },
+  "accuracy": {
+    "estimated_goal_error": {
+      "position_error_m": 0.2440486777119132,
+      "yaw_error_rad": 0.014819256148179357,
+      "yaw_error_deg": 0.8490808328139741,
+      "within_position_tolerance": true,
+      "within_yaw_tolerance": true,
+      "within_both_tolerances": true
+    },
+    "ground_truth_goal_error": {
+      "position_error_m": 0.2994395581749343,
+      "yaw_error_rad": 0.08081,
+      "yaw_error_deg": 4.630071942452183,
+      "within_position_tolerance": false,
+      "within_yaw_tolerance": true,
+      "within_both_tolerances": false
+    },
+    "estimated_ground_truth_discrepancy": {
+      "position_error_m": 0.11028827049487275,
+      "yaw_error_rad": 0.06599074385182065,
+      "yaw_error_deg": 3.7809911096382085,
+      "within_position_tolerance": true,
+      "within_yaw_tolerance": true,
+      "within_both_tolerances": true
+    }
+  },
+  "navigation_log": {
+    "navigation_start_timestamp": 1795191981.5241451,
+    "navigation_success_timestamp": 1795192045.8244526,
+    "server_navigation_duration_s": 64.30030751228333,
+    "progress_failure_count": 1,
+    "progress_failure_offsets_s": [
+      21.57107639312744
+    ],
+    "local_costmap_clear_count": 1,
+    "global_costmap_clear_count": 0,
+    "controller_rate_warning_count": 1,
+    "controller_rate_warnings": [
+      {
+        "timestamp": 1795192003.1999335,
+        "actual_rate_hz": 13.3333
+      }
+    ],
+    "local_costmap_tf_drop_count": 1,
+    "global_costmap_tf_drop_count": 1
+  },
+  "progress_failure_windows": [
+    {
+      "failure_offset_s": 21.57107639312744,
+      "window_start_s": 11.571076393127441,
+      "window_end_s": 21.57107639312744,
+      "sample_count": 98,
+      "net_odometry_displacement_m": 0.12633894081063607,
+      "sampled_odometry_distance_m": 0.17875928752654108,
+      "velocity": {
+        "absolute_linear_velocity_mps": {
+          "count": 98,
+          "mean": 0.018823608368965666,
+          "median": 0.007900075631869074,
+          "min": 5.8956049606940676e-05,
+          "max": 0.07106272429582838,
+          "stdev": 0.021060007232122886
+        },
+        "absolute_angular_velocity_radps": {
+          "count": 98,
+          "mean": 0.10766779232339783,
+          "median": 0.10910414847557368,
+          "min": 0.06440363509401874,
+          "max": 0.1336203062857931,
+          "stdev": 0.017678089471818027
+        },
+        "stationary_sample_count": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Ground truth is sampled only at endpoints.",
+    "Odometry distance is not ground-truth distance.",
+    "Sampled trajectories may bridge missing samples.",
+    "The average odometry speed uses an approximate two-second settling duration.",
+    "Progress windows align the first navigation sample approximately with the server start.",
+    "Progress windows do not reproduce internal progress checker baseline resets.",
+    "Log event counts describe recorded messages rather than all underlying events."
+  ]
+}

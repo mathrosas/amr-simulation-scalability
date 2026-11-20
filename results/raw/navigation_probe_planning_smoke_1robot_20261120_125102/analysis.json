@@ -1,0 +1,114 @@
+{
+  "experiment": "navigation_probe_planning_smoke_1robot_20261120_125102",
+  "namespace": "j100_0000",
+  "goal": {
+    "x": 0.0,
+    "y": 0.0,
+    "yaw_rad": 0.0,
+    "frame_id": "map"
+  },
+  "execution_enabled": false,
+  "completed": true,
+  "requires_manual_stop": false,
+  "planning": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0005943129999650409,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 0.0059223850003036205,
+    "client_sim_duration_s": 0.003,
+    "reported_planning_time_s": 0.003,
+    "pose_count": 232,
+    "path_length_m": 5.874368600094362,
+    "direct_distance_m": 3.5556289591388555,
+    "path_length_ratio": 1.6521320609102832,
+    "succeeded": true,
+    "csv_pose_count": 232,
+    "csv_path_length_m": 5.874368600094362,
+    "csv_length_matches_summary": true
+  },
+  "navigation": {
+    "succeeded": null,
+    "effective_rtf": null,
+    "feedback_count": 0,
+    "average_feedback_rate_hz": null,
+    "max_recoveries": null
+  },
+  "trajectory": {
+    "planned_length_m": 5.874368600094362,
+    "odometry_length_m": null,
+    "odometry_sample_count": 0,
+    "sampled_map_length_m": null,
+    "sampled_odometry_length_m": null,
+    "odometry_to_planned_length_ratio": null,
+    "average_odometry_speed_mps": null
+  },
+  "sampling": {
+    "target_rate_hz": 10.0,
+    "all_samples": {
+      "sample_count": 36,
+      "duration_s": 3.730799209,
+      "actual_rate_hz": 9.381367915905978,
+      "interval_ms": {
+        "count": 35,
+        "mean": 106.59426311428571,
+        "median": 102.159819,
+        "min": 100.545856,
+        "max": 137.35517,
+        "stdev": 8.254041741223388
+      },
+      "missing_map_pose_samples": 36,
+      "missing_odometry_samples": 24
+    },
+    "navigation": {
+      "sample_count": 0,
+      "duration_s": null,
+      "actual_rate_hz": null,
+      "interval_ms": null,
+      "missing_map_pose_samples": 0,
+      "missing_odometry_samples": 0
+    },
+    "settling": {
+      "sample_count": 0,
+      "duration_s": null,
+      "actual_rate_hz": null,
+      "interval_ms": null,
+      "missing_map_pose_samples": 0,
+      "missing_odometry_samples": 0
+    },
+    "sample_count_matches_summary": true
+  },
+  "velocity": {
+    "navigation": {
+      "absolute_linear_velocity_mps": null,
+      "absolute_angular_velocity_radps": null,
+      "stationary_sample_count": 0
+    },
+    "settling": {
+      "absolute_linear_velocity_mps": null,
+      "absolute_angular_velocity_radps": null,
+      "stationary_sample_count": 0
+    },
+    "final_stationary": true
+  },
+  "ground_truth": {
+    "map_world_alignment_assumed": false,
+    "initial_pose": null,
+    "final_pose": null,
+    "endpoint_displacement_m": null
+  },
+  "accuracy": null,
+  "navigation_log": null,
+  "progress_failure_windows": [],
+  "limitations": [
+    "Ground truth is sampled only at endpoints.",
+    "Odometry distance is not ground-truth distance.",
+    "Sampled trajectories may bridge missing samples.",
+    "The average odometry speed uses an approximate two-second settling duration.",
+    "Progress windows align the first navigation sample approximately with the server start.",
+    "Progress windows do not reproduce internal progress checker baseline resets.",
+    "Log event counts describe recorded messages rather than all underlying events."
+  ]
+}

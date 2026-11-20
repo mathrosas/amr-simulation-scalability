@@ -1,0 +1,65 @@
+{
+  "experiment": "single_robot_navigation",
+  "started_utc": "2026-11-20T16:35:47.691+00:00",
+  "finished_utc": "2026-11-20T16:37:03.200+00:00",
+  "robot_count": 1,
+  "namespace": "j100_0000",
+  "world": "warehouse",
+  "gazebo_gui_enabled": true,
+  "rviz_enabled": false,
+  "resource_interval_s": 2.0,
+  "goal": {
+    "x": -1.2874,
+    "y": -3.1625,
+    "yaw_rad": 0.0
+  },
+  "environment": {
+    "amr-scalability-simulation": {
+      "running": true,
+      "image_id": "sha256:970015d533d52c816d1d59ec10cfc2d5df20977b8d8d34c89c67f58ee6543315",
+      "started_at": "2026-11-20T16:34:52.887793431Z"
+    },
+    "amr-scalability-localization": {
+      "running": true,
+      "image_id": "sha256:c53cc7cfce6c2a95cee9b03c1070f6039c6192c477abf1756542544ced1d52fb",
+      "started_at": "2026-11-20T16:35:07.451640291Z"
+    },
+    "amr-scalability-navigation": {
+      "running": true,
+      "image_id": "sha256:c53cc7cfce6c2a95cee9b03c1070f6039c6192c477abf1756542544ced1d52fb",
+      "started_at": "2026-11-20T16:35:33.204348256Z"
+    },
+    "amr-scalability-visualization": {
+      "running": false,
+      "image_id": "sha256:970015d533d52c816d1d59ec10cfc2d5df20977b8d8d34c89c67f58ee6543315",
+      "started_at": "2026-11-20T14:57:45.821282541Z"
+    }
+  },
+  "configuration_hashes": {
+    "compose.yaml": "345871f656af903609f22744f7824064fd3f443527f56a5f126d56333eaf59db",
+    "compose.visualization.yaml": "8ee37e47bf653fe12caea03787507e2533b899fdbf697538c67e355b3d9d7ac4",
+    "compose.navigation.yaml": "af6d42ef767f4ece226021da699e697c77d91476784acf8afb88c287b0d45ffb",
+    "config/jackal/robot.yaml": "7291b8e92525b93098ec33dd4df3fa11c83b6666fea84f84b5829f7db2b65286",
+    "config/navigation/j100/nav2.yaml": "885031003fa6c3a2ec7c5098f89d9e97cf41d0de65f00b8902c0e567e0c0b4d1",
+    "docker/nav2/Dockerfile": "70148584dcc90b968ca5ea3160917a4ccbd91e59961d0ef13d33716235356c5e",
+    "scripts/navigation_probe.py": "63d086057fe66e582cd37e2d85c5c9d69d7326f6f4c0ad6564479460f1a50cbb",
+    "scripts/run_navigation_trial.py": "a9ef9ead9b7f04bf7e4a95e2432f8f632589df2a58f380cf152851a923d81c1b"
+  },
+  "initial_ground_truth": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0635,
+    "roll_rad": -0.0,
+    "pitch_rad": 0.0,
+    "yaw_rad": -0.0
+  },
+  "probe_exit_code": 0,
+  "rtf_sample_count": 721,
+  "resource_sample_count": 37,
+  "navigation_window": {
+    "start_elapsed_s": 6.521057101999759,
+    "end_elapsed_s": 71.47237669199967,
+    "duration_s": 64.95131958999991
+  },
+  "errors": {}
+}

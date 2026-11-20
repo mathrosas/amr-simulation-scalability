@@ -1,0 +1,11 @@
+
+Requesting state for world [warehouse]...
+
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="j100-0000"]/link[@name="base_link"]/sensor[@name="lidar2d_0"]/gz_frame_id:<data-string>:L137]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="j100-0000"]/link[@name="base_link"]/sensor[@name="imu_0"]/gz_frame_id:<data-string>:L145]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="j100-0000"]/link[@name="base_link"]/sensor[@name="gps_0"]/gz_frame_id:<data-string>:L153]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+Model: [136]
+  - Name: j100_0000/robot
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [-1.615550 -3.292130 0.063500]
+    [-0.000000 0.000000 -0.034126]

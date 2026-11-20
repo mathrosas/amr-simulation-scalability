@@ -23,7 +23,7 @@ services:
 
     volumes:
       - ./config/jackal:/etc/clearpath:ro
-      - ./config/rviz/config.rviz:/home/robot/config.rviz:ro
+      - ${RVIZ_CONFIG_FILE:-./config/rviz/config.rviz}:/home/robot/config.rviz:ro
 
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ${XAUTHORITY}:/tmp/host.Xauthority:ro

@@ -1,0 +1,70 @@
+[bt_navigator-6] [INFO] [1795190044.033141145] [j100_0000.bt_navigator]: Begin navigating from current location (-1.53, -3.18) to (0.00, 0.00)
+[controller_server-1] [INFO] [1795190044.053623124] [j100_0000.controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [INFO] [1795190045.103742485] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190046.153742800] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190047.153765923] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190048.203808524] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190049.203748998] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190050.253741952] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190051.253745123] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190052.303746179] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190053.303747975] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190054.353740912] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190055.353743247] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190056.403773722] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190057.403744655] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190058.453745010] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190059.453742672] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190060.503776046] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190061.503743850] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190062.553742085] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190063.553746175] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190064.603742835] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190065.603744278] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1795190065.603872620] [j100_0000.controller_server]: Failed to make progress
+[controller_server-1] [INFO] [1795190065.604204676] [j100_0000.controller_server]: Optimizer reset
+[controller_server-1] [WARN] [1795190065.604214214] [j100_0000.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1795190065.633479206] [j100_0000.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1795190065.633819808] [j100_0000.controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [WARN] [1795190065.738020478] [j100_0000.controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.5238 Hz.
+[controller_server-1] [INFO] [1795190066.638114619] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190067.688116024] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190068.688120601] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190069.738116201] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190070.738113483] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190071.788117066] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190072.788117031] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190073.838114451] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190074.838114054] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190075.838084352] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190076.888112426] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190077.938115470] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190078.938114320] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190079.988113686] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190080.988116041] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190082.038113041] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190083.038116707] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190084.088115267] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190085.088117921] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190086.138113954] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190087.138157715] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190088.188118029] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190089.188116364] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190090.238118605] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190091.238118712] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190092.288114310] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190093.288114657] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190094.338115462] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190095.338112583] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190096.388116613] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190097.388116178] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190098.438118092] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190099.438114020] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190100.488118178] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190101.488113704] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190102.538113723] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190103.538112235] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190104.588117152] [j100_0000.controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1795190105.388141723] [j100_0000.controller_server]: Reached the goal!
+[controller_server-1] [INFO] [1795190105.388654961] [j100_0000.controller_server]: Optimizer reset
+[bt_navigator-6] [INFO] [1795190105.417900824] [j100_0000.bt_navigator]: Goal succeeded

@@ -1,0 +1,83 @@
+services:
+  navigation:
+    build:
+      context: ./docker/nav2
+      dockerfile: Dockerfile
+
+    image: amr-scalability-nav2:jazzy
+
+    container_name: amr-scalability-navigation
+
+    network_mode: host
+    ipc: host
+
+    init: true
+
+    environment:
+      ROS_DOMAIN_ID: "0"
+      SETUP_PATH: /etc/clearpath
+
+    volumes:
+      - ./config/jackal:/etc/clearpath:ro
+      - ./config/navigation/j100/nav2.yaml:/opt/ros/jazzy/share/clearpath_nav2_demos/config/j100/nav2.yaml:ro
+
+    entrypoint:
+      - /bin/bash
+      - -lc
+
+    command:
+      - >
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch clearpath_nav2_demos nav2.launch.py
+        use_sim_time:=true
+        setup_path:=/etc/clearpath
+        slam:=false
+        autostart:=true
+        use_composition:=false
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s
+
+    stdin_open: true
+    tty: true
+
+  localization:
+    image: amr-scalability-nav2:jazzy
+
+    container_name: amr-scalability-localization
+
+    network_mode: host
+    ipc: host
+
+    init: true
+
+    environment:
+      ROS_DOMAIN_ID: "0"
+      SETUP_PATH: /etc/clearpath
+
+    volumes:
+      - ./config/jackal:/etc/clearpath:ro
+
+    entrypoint:
+      - /bin/bash
+      - -lc
+
+    command:
+      - >
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch clearpath_nav2_demos localization.launch.py
+        use_sim_time:=true
+        setup_path:=/etc/clearpath
+        map:=/opt/ros/jazzy/share/clearpath_nav2_demos/maps/warehouse.yaml
+        autostart:=true
+        use_composition:=false
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s
+
+    stdin_open: true
+    tty: true
