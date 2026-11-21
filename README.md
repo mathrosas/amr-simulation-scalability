@@ -6,6 +6,67 @@ The project investigates how simulation performance and robot responsiveness cha
 
 The objective is to identify performance bottlenecks through controlled, reproducible experiments rather than assuming that simulation slowdown and loss of robot control have the same underlying cause.
 
+## Current Validation Status
+
+**Last validated:** November 20, 2026
+
+The project has completed its initial single-robot experiments and established a validated two-robot simulation and autonomous navigation baseline.
+
+### Implementation Progress
+
+| Component | Status |
+|---|---|
+| Single-robot simulation and control | Validated |
+| Single-robot autonomous navigation | Validated |
+| Multi-robot simulation | Validated with 2 robots |
+| Independent ROS 2 namespaces | Validated |
+| Independent AMCL localization | Validated |
+| Independent Nav2 navigation stacks | Validated |
+| Controlled Nav2 lifecycle activation | Validated |
+| Simultaneous two-robot navigation | Validated |
+| Two-robot repeatability experiments | Completed |
+| Open-RMF fleet management | Pending integration |
+| Automated end-to-end fleet initialization | Pending |
+| Scaling to 3, 5, and 10 robots | Planned |
+
+### Two-Robot Navigation Baseline
+
+Three independent two-robot navigation experiments were completed using identical configurations, initial positions, and navigation goals.
+
+| Metric | Result |
+|---|---|
+| Independent experiments | 3 |
+| Navigation actions | 6 |
+| Successful navigation actions | 6/6 |
+| Mean fleet makespan | 12.468 seconds |
+| Recovery behaviors | 0 |
+| Controlled Nav2 startup attempts | 6/6 successful |
+
+All navigation actions completed successfully.
+
+Independent Gazebo ground-truth positioning measurements were also collected and preserved. Four of six final positions satisfied the additional 0.25 m positioning-accuracy criterion. This criterion is distinct from successful Nav2 action completion.
+
+The current implementation demonstrates simultaneous autonomous navigation without centralized fleet coordination.
+
+**Detailed documentation:** [Two-Robot Simulation and Navigation Baseline](docs/baseline-2-robots.md).
+
+### Next Development Milestone: Open-RMF
+
+The next phase will integrate Open-RMF into the existing Docker-based architecture.
+
+The objective is to establish a reproducible two-robot fleet-management baseline with:
+
+- Open-RMF fleet registration and robot-state reporting.
+- A warehouse navigation and traffic graph.
+- A fleet adapter connecting Open-RMF to the existing Nav2 interfaces.
+- RMF-managed navigation tasks and traffic coordination.
+- Automated startup, initialization, execution, and result collection.
+- Repeatable benchmarks for comparing direct Nav2 navigation against Open-RMF-managed operation.
+
+The validated Nav2-only baseline will remain unchanged as a reference.
+
+Fleet scaling to 3, 5, and 10 robots will follow successful Open-RMF integration and validation.
+
 ## 1. Research Objectives
 
 This investigation examines how increasing the number of simulated AMRs affects:
@@ -239,7 +300,7 @@ Each robot will have:
 
 Experiments will use repeated runs under controlled conditions.
 
-The initial two-robot implementation will validate independent robot operation before introducing centralized fleet coordination through Open-RMF.
+The two-robot Nav2-only baseline was validated on November 20, 2026. Open-RMF fleet coordination will be integrated and benchmarked before scaling beyond two robots.
 
 ### Phase 4 — Bottleneck Investigation
 

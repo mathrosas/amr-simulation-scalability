@@ -1,0 +1,18 @@
+===== j100_0000 =====
+
+Requesting state for world [warehouse]...
+
+Model: [164]
+  - Name: j100_0000/robot
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [-1.815900 0.183677 0.063500]
+    [-0.000000 0.000000 -2.920310]
+===== j100_0001 =====
+
+Requesting state for world [warehouse]...
+
+Model: [136]
+  - Name: j100_0001/robot
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [2.891050 0.018623 0.063500]
+    [-0.000000 0.000000 0.065924]

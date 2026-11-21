@@ -32,7 +32,7 @@ services:
         use_sim_time:=true
         setup_path:=/etc/clearpath
         slam:=false
-        autostart:=true
+        autostart:=false
         use_composition:=false
 
     healthcheck:

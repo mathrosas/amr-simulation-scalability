@@ -1,0 +1,61 @@
+{
+  "robot_count": 2,
+  "robot_results": {
+    "j100_0000": {
+      "requested_pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0
+      },
+      "estimated_pose": {
+        "x": 0.0012277450347367037,
+        "y": -0.040535491089187164,
+        "yaw": -0.0023188094070804494
+      },
+      "pose_stamp_ns": 137325000000,
+      "initial_pose_published_sim_ns": 137328000000,
+      "observed_response_wall_s": 0.024491684998793062,
+      "position_residual_m": 0.04055407988984453,
+      "yaw_residual_rad": 0.002318809407080449,
+      "covariance_x": 0.2227242227031657,
+      "covariance_y": 0.20115487536115284,
+      "covariance_yaw": 0.05535768087626892,
+      "initialization_passed": true
+    },
+    "j100_0001": {
+      "requested_pose": {
+        "x": 1.0,
+        "y": 0.0,
+        "yaw": 0.0
+      },
+      "estimated_pose": {
+        "x": 0.9874212062529744,
+        "y": -0.030111980474664908,
+        "yaw": 0.0030685777988311578
+      },
+      "pose_stamp_ns": 137352000000,
+      "initial_pose_published_sim_ns": 137352000000,
+      "observed_response_wall_s": 0.02076071700139437,
+      "position_residual_m": 0.03263368536093973,
+      "yaw_residual_rad": 0.0030685777988311578,
+      "covariance_x": 0.2231565681388059,
+      "covariance_y": 0.21518315868736543,
+      "covariance_yaw": 0.056060125448523186,
+      "initialization_passed": true
+    }
+  },
+  "position_residual_limit_m": 0.5,
+  "yaw_residual_limit_rad": 0.5,
+  "initial_position_variance_m2": 0.25,
+  "initial_yaw_variance_rad2": 0.06854,
+  "fleet_initialization_passed": true,
+  "error": null,
+  "limitations": [
+    "Assumes map and Gazebo world alignment",
+    "Uses configured spawn poses",
+    "Requires stationary robots at their spawn poses",
+    "A fresh AMCL estimate is indirect confirmation of initialization",
+    "Residuals are relative to requested poses, not independent ground truth",
+    "Diagnostic limits do not establish navigation accuracy"
+  ]
+}

@@ -1,0 +1,508 @@
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2026-11-20-23-36-51-452298-mainframe-7
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Starting Nav2 for j100_0000
+[INFO] [launch.user]: Starting Nav2 for j100_0001
+[INFO] [navigation_j100_0000-1]: process started with pid [18]
+[INFO] [navigation_j100_0001-2]: process started with pid [19]
+[navigation_j100_0001-2] [INFO] [launch]: All log files can be found below /home/robot/.ros/log/2026-11-20-23-36-51-680023-mainframe-19
+[navigation_j100_0001-2] [INFO] [launch]: Default logging verbosity is set to INFO
+[navigation_j100_0000-1] [INFO] [launch]: All log files can be found below /home/robot/.ros/log/2026-11-20-23-36-51-680283-mainframe-18
+[navigation_j100_0000-1] [INFO] [launch]: Default logging verbosity is set to INFO
+[navigation_j100_0000-1] [INFO] [controller_server-1]: process started with pid [24]
+[navigation_j100_0000-1] [INFO] [smoother_server-2]: process started with pid [26]
+[navigation_j100_0000-1] [INFO] [planner_server-3]: process started with pid [27]
+[navigation_j100_0000-1] [INFO] [route_server-4]: process started with pid [29]
+[navigation_j100_0000-1] [INFO] [behavior_server-5]: process started with pid [31]
+[navigation_j100_0000-1] [INFO] [bt_navigator-6]: process started with pid [32]
+[navigation_j100_0000-1] [INFO] [waypoint_follower-7]: process started with pid [33]
+[navigation_j100_0000-1] [INFO] [velocity_smoother-8]: process started with pid [34]
+[navigation_j100_0000-1] [INFO] [collision_monitor-9]: process started with pid [36]
+[navigation_j100_0000-1] [INFO] [opennav_docking-10]: process started with pid [38]
+[navigation_j100_0000-1] [INFO] [lifecycle_manager-11]: process started with pid [43]
+[navigation_j100_0001-2] [INFO] [controller_server-1]: process started with pid [25]
+[navigation_j100_0001-2] [INFO] [smoother_server-2]: process started with pid [28]
+[navigation_j100_0001-2] [INFO] [planner_server-3]: process started with pid [30]
+[navigation_j100_0001-2] [INFO] [route_server-4]: process started with pid [35]
+[navigation_j100_0001-2] [INFO] [behavior_server-5]: process started with pid [37]
+[navigation_j100_0001-2] [INFO] [bt_navigator-6]: process started with pid [39]
+[navigation_j100_0001-2] [INFO] [waypoint_follower-7]: process started with pid [40]
+[navigation_j100_0001-2] [INFO] [velocity_smoother-8]: process started with pid [41]
+[navigation_j100_0001-2] [INFO] [collision_monitor-9]: process started with pid [42]
+[navigation_j100_0001-2] [INFO] [opennav_docking-10]: process started with pid [44]
+[navigation_j100_0001-2] [INFO] [lifecycle_manager-11]: process started with pid [45]
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217812.003896991] [j100_0000.controller_server]: 
+[navigation_j100_0000-1] [controller_server-1] 	controller_server lifecycle node launched. 
+[navigation_j100_0000-1] [controller_server-1] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217812.009070314] [j100_0000.controller_server]: Creating controller server
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217812.232755792] [j100_0000.smoother_server]: 
+[navigation_j100_0000-1] [smoother_server-2] 	smoother_server lifecycle node launched. 
+[navigation_j100_0000-1] [smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217812.234584861] [j100_0000.smoother_server]: Creating smoother server
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217812.236216858] [j100_0000.bt_navigator]: 
+[navigation_j100_0000-1] [bt_navigator-6] 	bt_navigator lifecycle node launched. 
+[navigation_j100_0000-1] [bt_navigator-6] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [bt_navigator-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217812.237658774] [j100_0000.bt_navigator]: Creating
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217812.268450614] [j100_0001.smoother_server]: 
+[navigation_j100_0001-2] [smoother_server-2] 	smoother_server lifecycle node launched. 
+[navigation_j100_0001-2] [smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217812.272412246] [j100_0001.smoother_server]: Creating smoother server
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217812.415952693] [j100_0001.bt_navigator]: 
+[navigation_j100_0001-2] [bt_navigator-6] 	bt_navigator lifecycle node launched. 
+[navigation_j100_0001-2] [bt_navigator-6] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [bt_navigator-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217812.416523292] [j100_0001.collision_monitor]: 
+[navigation_j100_0001-2] [collision_monitor-9] 	collision_monitor lifecycle node launched. 
+[navigation_j100_0001-2] [collision_monitor-9] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [collision_monitor-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217812.417699817] [j100_0001.behavior_server]: 
+[navigation_j100_0001-2] [behavior_server-5] 	behavior_server lifecycle node launched. 
+[navigation_j100_0001-2] [behavior_server-5] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [behavior_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217812.415962772] [j100_0000.behavior_server]: 
+[navigation_j100_0000-1] [behavior_server-5] 	behavior_server lifecycle node launched. 
+[navigation_j100_0000-1] [behavior_server-5] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [behavior_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217812.420473232] [j100_0001.bt_navigator]: Creating
+[navigation_j100_0000-1] [velocity_smoother-8] [INFO] [1795217812.547942366] [j100_0000.velocity_smoother]: 
+[navigation_j100_0000-1] [velocity_smoother-8] 	velocity_smoother lifecycle node launched. 
+[navigation_j100_0000-1] [velocity_smoother-8] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [velocity_smoother-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217812.585357271] [j100_0000.local_costmap.local_costmap]: 
+[navigation_j100_0000-1] [controller_server-1] 	local_costmap lifecycle node launched. 
+[navigation_j100_0000-1] [controller_server-1] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217812.585824905] [j100_0000.local_costmap.local_costmap]: Creating Costmap
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217812.603669050] [j100_0000.waypoint_follower]: 
+[navigation_j100_0000-1] [waypoint_follower-7] 	waypoint_follower lifecycle node launched. 
+[navigation_j100_0000-1] [waypoint_follower-7] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [waypoint_follower-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217812.604932970] [j100_0000.waypoint_follower]: Creating
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217812.606899018] [j100_0000.planner_server]: 
+[navigation_j100_0000-1] [planner_server-3] 	planner_server lifecycle node launched. 
+[navigation_j100_0000-1] [planner_server-3] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217812.606908015] [j100_0001.controller_server]: 
+[navigation_j100_0001-2] [controller_server-1] 	controller_server lifecycle node launched. 
+[navigation_j100_0001-2] [controller_server-1] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217812.608590597] [j100_0000.planner_server]: Creating
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217812.611922909] [j100_0001.planner_server]: 
+[navigation_j100_0001-2] [planner_server-3] 	planner_server lifecycle node launched. 
+[navigation_j100_0001-2] [planner_server-3] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217812.613340830] [j100_0001.planner_server]: Creating
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217812.615065943] [j100_0001.controller_server]: Creating controller server
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217812.632365527] [j100_0001.waypoint_follower]: 
+[navigation_j100_0001-2] [waypoint_follower-7] 	waypoint_follower lifecycle node launched. 
+[navigation_j100_0001-2] [waypoint_follower-7] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [waypoint_follower-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217812.633099746] [j100_0001.waypoint_follower]: Creating
+[navigation_j100_0001-2] [velocity_smoother-8] [INFO] [1795217812.648217946] [j100_0001.velocity_smoother]: 
+[navigation_j100_0001-2] [velocity_smoother-8] 	velocity_smoother lifecycle node launched. 
+[navigation_j100_0001-2] [velocity_smoother-8] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [velocity_smoother-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217812.664273839] [j100_0001.docking_server]: 
+[navigation_j100_0001-2] [opennav_docking-10] 	docking_server lifecycle node launched. 
+[navigation_j100_0001-2] [opennav_docking-10] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [opennav_docking-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217812.664792049] [j100_0001.docking_server]: Creating docking_server
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217812.690984721] [j100_0001.global_costmap.global_costmap]: 
+[navigation_j100_0001-2] [planner_server-3] 	global_costmap lifecycle node launched. 
+[navigation_j100_0001-2] [planner_server-3] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217812.692207443] [j100_0001.global_costmap.global_costmap]: Creating Costmap
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217812.723537441] [j100_0000.global_costmap.global_costmap]: 
+[navigation_j100_0000-1] [planner_server-3] 	global_costmap lifecycle node launched. 
+[navigation_j100_0000-1] [planner_server-3] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217812.725074578] [j100_0000.global_costmap.global_costmap]: Creating Costmap
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217812.725207379] [j100_0001.local_costmap.local_costmap]: 
+[navigation_j100_0001-2] [controller_server-1] 	local_costmap lifecycle node launched. 
+[navigation_j100_0001-2] [controller_server-1] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217812.726771347] [j100_0001.local_costmap.local_costmap]: Creating Costmap
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217812.912908628] [j100_0001.lifecycle_manager_navigation]: Creating
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217812.928816721] [j100_0001.route_server]: 
+[navigation_j100_0001-2] [route_server-4] 	route_server lifecycle node launched. 
+[navigation_j100_0001-2] [route_server-4] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0001-2] [route_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217812.936274705] [j100_0001.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217812.939623809] [j100_0000.lifecycle_manager_navigation]: Creating
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217812.950575429] [j100_0000.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217813.008287307] [j100_0000.route_server]: 
+[navigation_j100_0000-1] [route_server-4] 	route_server lifecycle node launched. 
+[navigation_j100_0000-1] [route_server-4] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [route_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217813.015835912] [j100_0000.collision_monitor]: 
+[navigation_j100_0000-1] [collision_monitor-9] 	collision_monitor lifecycle node launched. 
+[navigation_j100_0000-1] [collision_monitor-9] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [collision_monitor-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217813.059114376] [j100_0000.docking_server]: 
+[navigation_j100_0000-1] [opennav_docking-10] 	docking_server lifecycle node launched. 
+[navigation_j100_0000-1] [opennav_docking-10] 	Waiting on external lifecycle transitions to activate
+[navigation_j100_0000-1] [opennav_docking-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217813.059620613] [j100_0000.docking_server]: Creating docking_server
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217884.666758301] [j100_0000.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217884.666800331] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.667237338] [j100_0000.controller_server]: Configuring controller interface
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.667258127] [j100_0000.controller_server]: getting progress checker plugins..
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.668185031] [j100_0000.controller_server]: getting goal checker plugins..
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.668741112] [j100_0000.controller_server]: Controller frequency set to 20.0000Hz
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.668780277] [j100_0000.local_costmap.local_costmap]: Configuring
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.684506237] [j100_0000.local_costmap.local_costmap]: Using plugin "static_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.689213462] [j100_0000.local_costmap.local_costmap]: Subscribing to the map topic (/j100_0000/map) with transient local durability
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.691885437] [j100_0000.local_costmap.local_costmap]: Initialized plugin "static_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.691909823] [j100_0000.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.694625831] [j100_0000.local_costmap.local_costmap]: Subscribed to Topics: scan
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.712705093] [j100_0000.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.712733456] [j100_0000.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.714087648] [j100_0000.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.750936669] [j100_0000.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.751013344] [j100_0000.local_costmap.local_costmap]: StaticLayer: Resizing static layer to 604 X 1004 at 0.050000 m/pix
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.752023996] [j100_0000.controller_server]: Controller Server has progress_checker  progress checkers available.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.752960647] [j100_0000.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.754548020] [j100_0000.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.755828112] [j100_0000.controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.761962066] [j100_0000.controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.764219697] [j100_0000.controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.764249554] [j100_0000.controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.766714908] [j100_0000.controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.766741077] [j100_0000.controller_server]: Critic loaded : mppi::critics::CostCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.768058219] [j100_0000.controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.768079509] [j100_0000.controller_server]: Critic loaded : mppi::critics::GoalCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.769470841] [j100_0000.controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.769490248] [j100_0000.controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.772170318] [j100_0000.controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.772192610] [j100_0000.controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.773134542] [j100_0000.controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.775251778] [j100_0000.controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.775278448] [j100_0000.controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.776019981] [j100_0000.controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.776035390] [j100_0000.controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.778586246] [j100_0000.controller_server]: Optimizer reset
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.785913567] [MPPIController]: Configured MPPI Controller: FollowPath
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217884.785939737] [j100_0000.controller_server]: Controller Server has FollowPath  controllers available.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217884.802474828] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217884.802690245] [j100_0000.smoother_server]: Configuring smoother server
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217884.823092492] [j100_0000.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217884.825769787] [j100_0000.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217884.838378089] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.838604337] [j100_0000.planner_server]: Configuring
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.838632871] [j100_0000.global_costmap.global_costmap]: Configuring
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.855109892] [j100_0000.global_costmap.global_costmap]: Using plugin "static_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.861322054] [j100_0000.global_costmap.global_costmap]: Subscribing to the map topic (/j100_0000/map) with transient local durability
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.864545893] [j100_0000.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.864573245] [j100_0000.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.868303982] [j100_0000.global_costmap.global_costmap]: Subscribed to Topics: scan
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.884222316] [j100_0000.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.884330862] [j100_0000.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.886296661] [j100_0000.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.926758075] [j100_0000.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 604 X 1004 at 0.050000 m/pix
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.926895335] [j100_0000.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.926917577] [j100_0000.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217884.930235413] [j100_0000.planner_server]: Planner Server has GridBased  planners available.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217884.952144881] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217884.952344609] [j100_0000.route_server]: Configuring
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.036163797] [j100_0000.route_server]: Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.036189105] [j100_0000.route_server]: Configuring geojson graph file loader
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.036194565] [j100_0000.route_server]: No graph file provided to load yet.
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.040510751] [j100_0000.route_server]: Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.040534466] [j100_0000.route_server]: Configuring distance scorer.
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.041344418] [j100_0000.route_server]: Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.041362221] [j100_0000.route_server]: Configuring costmap scorer.
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.047746159] [j100_0000.route_server]: Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.047772579] [j100_0000.route_server]: Configuring Adjust speed limit operation.
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.050649962] [j100_0000.route_server]: Created route operation ReroutingService of type nav2_route::ReroutingService
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.050816147] [j100_0000.route_server]: Configuring Rerouting service operation.
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.053948121] [j100_0000.route_server]: Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217885.054278687] [j100_0000.route_server]: Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.063499841] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.063950063] [j100_0000.behavior_server]: Configuring
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.074727151] [j100_0000.behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.075898257] [j100_0000.behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.077508793] [j100_0000.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.078439264] [j100_0000.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.080093203] [j100_0000.behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.089635224] [j100_0000.behavior_server]: Configuring spin
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.109107963] [j100_0000.behavior_server]: Configuring backup
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.122869827] [j100_0000.behavior_server]: Configuring drive_on_heading
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.135149237] [j100_0000.behavior_server]: Configuring assisted_teleop
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217885.150806528] [j100_0000.behavior_server]: Configuring wait
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.160963532] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[navigation_j100_0000-1] [velocity_smoother-8] [INFO] [1795217885.161260414] [j100_0000.velocity_smoother]: Configuring velocity smoother
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.173781371] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217885.173995426] [j100_0000.collision_monitor]: Configuring
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217885.187403191] [collision_monitor]: [scan]: Creating Scan
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217885.192751328] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217885.193384136] [collision_monitor]: [FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217885.198744546] [collision_monitor]: [FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.216238261] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217885.216497491] [j100_0000.bt_navigator]: Configuring
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217885.229590931] [j100_0000.bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217885.330850233] [j100_0000.bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.383846561] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217885.384054334] [j100_0000.waypoint_follower]: Configuring
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217885.423401812] [j100_0000.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.425084565] [j100_0000.lifecycle_manager_navigation]: [34m[1mConfiguring docking_server[0m[0m
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217885.425452551] [j100_0000.docking_server]: Configuring docking_server
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217885.425487968] [j100_0000.docking_server]: Controller frequency set to 50.0000Hz
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217885.470985831] [j100_0000.docking_server]: Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+[navigation_j100_0000-1] [opennav_docking-10] [WARN] [1795217885.481283201] [j100_0000.docking_server]: Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217885.481317536] [j100_0000.docking_server]: Docking Server has 1 dock types and 0 dock instances available.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.484782561] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.485003169] [j100_0000.controller_server]: Activating
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.485031773] [j100_0000.local_costmap.local_costmap]: Activating
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.485040159] [j100_0000.local_costmap.local_costmap]: Checking transform
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.485169473] [j100_0000.local_costmap.local_costmap]: start
+[navigation_j100_0000-1] [controller_server-1] [WARN] [1795217885.686865691] [j100_0000.controller_server]: Parameter controller_server.verbose not found
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.688616303] [j100_0000.controller_server]: Optimizer reset
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.689144121] [MPPIController]: Activated MPPI Controller: FollowPath
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217885.689167876] [j100_0000.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.798677095] [j100_0000.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.798709285] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217885.799329659] [j100_0000.smoother_server]: Activating
+[navigation_j100_0000-1] [smoother_server-2] [INFO] [1795217885.799356710] [j100_0000.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.907091332] [j100_0000.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217885.907120227] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217885.907525774] [j100_0000.planner_server]: Activating
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217885.907555510] [j100_0000.global_costmap.global_costmap]: Activating
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217885.907561752] [j100_0000.global_costmap.global_costmap]: Checking transform
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217885.907651953] [j100_0000.global_costmap.global_costmap]: start
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217886.959544755] [j100_0000.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217886.962705364] [j100_0000.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.071674413] [j100_0000.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.071705021] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating route_server[0m[0m
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217887.072089288] [j100_0000.route_server]: Activating
+[navigation_j100_0000-1] [route_server-4] [INFO] [1795217887.072214855] [j100_0000.route_server]: Creating bond (route_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.181055451] [j100_0000.lifecycle_manager_navigation]: Server route_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.181085488] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181487709] [j100_0000.behavior_server]: Activating
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181508669] [j100_0000.behavior_server]: Activating spin
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181516704] [j100_0000.behavior_server]: Activating backup
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181522795] [j100_0000.behavior_server]: Activating drive_on_heading
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181528967] [j100_0000.behavior_server]: Activating assisted_teleop
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181535399] [j100_0000.behavior_server]: Activating wait
+[navigation_j100_0000-1] [behavior_server-5] [INFO] [1795217887.181544276] [j100_0000.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.290101626] [j100_0000.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.290137764] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[navigation_j100_0000-1] [velocity_smoother-8] [INFO] [1795217887.290607834] [j100_0000.velocity_smoother]: Activating
+[navigation_j100_0000-1] [velocity_smoother-8] [INFO] [1795217887.290667667] [j100_0000.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.399938376] [j100_0000.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.399972210] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217887.400352209] [j100_0000.collision_monitor]: Activating
+[navigation_j100_0000-1] [collision_monitor-9] [INFO] [1795217887.400381204] [j100_0000.collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.509179399] [j100_0000.lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.509207833] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217887.509615605] [j100_0000.bt_navigator]: Activating
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795217887.638377128] [j100_0000.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.747850471] [j100_0000.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.747886649] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217887.748309910] [j100_0000.waypoint_follower]: Activating
+[navigation_j100_0000-1] [waypoint_follower-7] [INFO] [1795217887.748343814] [j100_0000.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.857658236] [j100_0000.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.857689385] [j100_0000.lifecycle_manager_navigation]: [34m[1mActivating docking_server[0m[0m
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217887.858211232] [j100_0000.docking_server]: Activating docking_server
+[navigation_j100_0000-1] [opennav_docking-10] [INFO] [1795217887.878043141] [j100_0000.docking_server]: Creating bond (docking_server) to lifecycle manager.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.987560828] [j100_0000.lifecycle_manager_navigation]: Server docking_server connected with bond.
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.987598188] [j100_0000.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[navigation_j100_0000-1] [lifecycle_manager-11] [INFO] [1795217887.987607957] [j100_0000.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795217925.588496956] [j100_0000.local_costmap.local_costmap]: Message Filter dropping message: frame 'lidar2d_0_laser' at time 327.975 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[navigation_j100_0000-1] [planner_server-3] [INFO] [1795217925.588509851] [j100_0000.global_costmap.global_costmap]: Message Filter dropping message: frame 'lidar2d_0_laser' at time 327.975 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.337095446] [j100_0001.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.337150571] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.337676716] [j100_0001.controller_server]: Configuring controller interface
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.337699259] [j100_0001.controller_server]: getting progress checker plugins..
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.338170580] [j100_0001.controller_server]: getting goal checker plugins..
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.338819759] [j100_0001.controller_server]: Controller frequency set to 20.0000Hz
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.338863271] [j100_0001.local_costmap.local_costmap]: Configuring
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.357286912] [j100_0001.local_costmap.local_costmap]: Using plugin "static_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.363421058] [j100_0001.local_costmap.local_costmap]: Subscribing to the map topic (/j100_0001/map) with transient local durability
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.366217269] [j100_0001.local_costmap.local_costmap]: Initialized plugin "static_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.366238279] [j100_0001.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.369306615] [j100_0001.local_costmap.local_costmap]: Subscribed to Topics: scan
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.393847280] [j100_0001.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.393938823] [j100_0001.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.400997399] [j100_0001.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.444664474] [j100_0001.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.444914697] [j100_0001.local_costmap.local_costmap]: StaticLayer: Resizing static layer to 604 X 1004 at 0.050000 m/pix
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.446174892] [j100_0001.controller_server]: Controller Server has progress_checker  progress checkers available.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.446937705] [j100_0001.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.449051795] [j100_0001.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.450412881] [j100_0001.controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.457204391] [j100_0001.controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.459653215] [j100_0001.controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.459683152] [j100_0001.controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.463176141] [j100_0001.controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.463210987] [j100_0001.controller_server]: Critic loaded : mppi::critics::CostCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.464933366] [j100_0001.controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.464958814] [j100_0001.controller_server]: Critic loaded : mppi::critics::GoalCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.466833341] [j100_0001.controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.466864630] [j100_0001.controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.469657084] [j100_0001.controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.469685247] [j100_0001.controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.470444674] [j100_0001.controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.471295754] [j100_0001.controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.471312176] [j100_0001.controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.472957950] [j100_0001.controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.472983227] [j100_0001.controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.475286766] [j100_0001.controller_server]: Optimizer reset
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.484819664] [MPPIController]: Configured MPPI Controller: FollowPath
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217927.484850803] [j100_0001.controller_server]: Controller Server has FollowPath  controllers available.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.505977858] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217927.506179420] [j100_0001.smoother_server]: Configuring smoother server
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217927.526967244] [j100_0001.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217927.527752670] [j100_0001.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.543929359] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.544985748] [j100_0001.planner_server]: Configuring
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.545020844] [j100_0001.global_costmap.global_costmap]: Configuring
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.565012862] [j100_0001.global_costmap.global_costmap]: Using plugin "static_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.570971266] [j100_0001.global_costmap.global_costmap]: Subscribing to the map topic (/j100_0001/map) with transient local durability
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.573880120] [j100_0001.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.573930766] [j100_0001.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.575408452] [j100_0001.global_costmap.global_costmap]: Subscribed to Topics: scan
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.587284073] [j100_0001.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.587312026] [j100_0001.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.589949186] [j100_0001.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.634591155] [j100_0001.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 604 X 1004 at 0.050000 m/pix
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.634780734] [j100_0001.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.634799960] [j100_0001.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217927.637802652] [j100_0001.planner_server]: Planner Server has GridBased  planners available.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.663303273] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.663539730] [j100_0001.route_server]: Configuring
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.718266863] [j100_0001.route_server]: Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.718300506] [j100_0001.route_server]: Configuring geojson graph file loader
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.718308111] [j100_0001.route_server]: No graph file provided to load yet.
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.724126210] [j100_0001.route_server]: Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.724156256] [j100_0001.route_server]: Configuring distance scorer.
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.725480312] [j100_0001.route_server]: Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.725505860] [j100_0001.route_server]: Configuring costmap scorer.
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.732055393] [j100_0001.route_server]: Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.732082184] [j100_0001.route_server]: Configuring Adjust speed limit operation.
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.735258013] [j100_0001.route_server]: Created route operation ReroutingService of type nav2_route::ReroutingService
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.735284102] [j100_0001.route_server]: Configuring Rerouting service operation.
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.738173018] [j100_0001.route_server]: Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217927.738796127] [j100_0001.route_server]: Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.750024443] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.750349188] [j100_0001.behavior_server]: Configuring
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.761802289] [j100_0001.behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.763944853] [j100_0001.behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.764979511] [j100_0001.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.766015922] [j100_0001.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.767816549] [j100_0001.behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.778453526] [j100_0001.behavior_server]: Configuring spin
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.796078915] [j100_0001.behavior_server]: Configuring backup
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.809138767] [j100_0001.behavior_server]: Configuring drive_on_heading
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.820992566] [j100_0001.behavior_server]: Configuring assisted_teleop
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217927.837835275] [j100_0001.behavior_server]: Configuring wait
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.851427404] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[navigation_j100_0001-2] [velocity_smoother-8] [INFO] [1795217927.851650496] [j100_0001.velocity_smoother]: Configuring velocity smoother
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.862123643] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217927.862866308] [j100_0001.collision_monitor]: Configuring
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217927.879031244] [collision_monitor]: [scan]: Creating Scan
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217927.885240854] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217927.885724509] [collision_monitor]: [FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217927.890831272] [collision_monitor]: [FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217927.913244041] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217927.913579946] [j100_0001.bt_navigator]: Configuring
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217927.927076955] [j100_0001.bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217928.037729266] [j100_0001.bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.101162713] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217928.101430289] [j100_0001.waypoint_follower]: Configuring
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217928.148158898] [j100_0001.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.150150957] [j100_0001.lifecycle_manager_navigation]: [34m[1mConfiguring docking_server[0m[0m
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217928.150495709] [j100_0001.docking_server]: Configuring docking_server
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217928.150534262] [j100_0001.docking_server]: Controller frequency set to 50.0000Hz
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217928.202608716] [j100_0001.docking_server]: Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+[navigation_j100_0001-2] [opennav_docking-10] [WARN] [1795217928.217370688] [j100_0001.docking_server]: Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217928.217425602] [j100_0001.docking_server]: Docking Server has 1 dock types and 0 dock instances available.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.220997310] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.221180547] [j100_0001.controller_server]: Activating
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.221206426] [j100_0001.local_costmap.local_costmap]: Activating
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.221213089] [j100_0001.local_costmap.local_costmap]: Checking transform
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.221330411] [j100_0001.local_costmap.local_costmap]: start
+[navigation_j100_0001-2] [controller_server-1] [WARN] [1795217928.423765171] [j100_0001.controller_server]: Parameter controller_server.verbose not found
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.425032619] [j100_0001.controller_server]: Optimizer reset
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.425911041] [MPPIController]: Activated MPPI Controller: FollowPath
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795217928.425933113] [j100_0001.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.536180970] [j100_0001.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.536210777] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217928.536641852] [j100_0001.smoother_server]: Activating
+[navigation_j100_0001-2] [smoother_server-2] [INFO] [1795217928.536677941] [j100_0001.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.646692627] [j100_0001.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217928.646723505] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217928.647234893] [j100_0001.planner_server]: Activating
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217928.647270610] [j100_0001.global_costmap.global_costmap]: Activating
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217928.647279868] [j100_0001.global_costmap.global_costmap]: Checking transform
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217928.647411417] [j100_0001.global_costmap.global_costmap]: start
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217929.699898724] [j100_0001.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[navigation_j100_0001-2] [planner_server-3] [INFO] [1795217929.703050297] [j100_0001.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217929.811748704] [j100_0001.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217929.811826401] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating route_server[0m[0m
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217929.812387893] [j100_0001.route_server]: Activating
+[navigation_j100_0001-2] [route_server-4] [INFO] [1795217929.812514422] [j100_0001.route_server]: Creating bond (route_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217929.921721101] [j100_0001.lifecycle_manager_navigation]: Server route_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217929.921754294] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922296750] [j100_0001.behavior_server]: Activating
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922317189] [j100_0001.behavior_server]: Activating spin
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922326075] [j100_0001.behavior_server]: Activating backup
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922331826] [j100_0001.behavior_server]: Activating drive_on_heading
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922337617] [j100_0001.behavior_server]: Activating assisted_teleop
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922342907] [j100_0001.behavior_server]: Activating wait
+[navigation_j100_0001-2] [behavior_server-5] [INFO] [1795217929.922351393] [j100_0001.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.031412707] [j100_0001.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.031448114] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[navigation_j100_0001-2] [velocity_smoother-8] [INFO] [1795217930.031895190] [j100_0001.velocity_smoother]: Activating
+[navigation_j100_0001-2] [velocity_smoother-8] [INFO] [1795217930.031944142] [j100_0001.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.141069127] [j100_0001.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.141099183] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217930.141635138] [j100_0001.collision_monitor]: Activating
+[navigation_j100_0001-2] [collision_monitor-9] [INFO] [1795217930.141665074] [j100_0001.collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.252695825] [j100_0001.lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.252731132] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217930.253475089] [j100_0001.bt_navigator]: Activating
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795217930.405910856] [j100_0001.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.515328524] [j100_0001.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.515359152] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217930.515830574] [j100_0001.waypoint_follower]: Activating
+[navigation_j100_0001-2] [waypoint_follower-7] [INFO] [1795217930.515862855] [j100_0001.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.627019424] [j100_0001.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.627052647] [j100_0001.lifecycle_manager_navigation]: [34m[1mActivating docking_server[0m[0m
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217930.627611273] [j100_0001.docking_server]: Activating docking_server
+[navigation_j100_0001-2] [opennav_docking-10] [INFO] [1795217930.648418855] [j100_0001.docking_server]: Creating bond (docking_server) to lifecycle manager.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.758438513] [j100_0001.lifecycle_manager_navigation]: Server docking_server connected with bond.
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.758466596] [j100_0001.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[navigation_j100_0001-2] [lifecycle_manager-11] [INFO] [1795217930.758473058] [j100_0001.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795218005.025395189] [j100_0001.bt_navigator]: Begin navigating from current location (0.99, -0.03) to (3.00, 0.00)
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795218005.025562165] [j100_0000.bt_navigator]: Begin navigating from current location (0.00, -0.04) to (-2.00, 0.00)
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218005.046235204] [j100_0001.controller_server]: Received a goal, begin computing control effort.
+[navigation_j100_0001-2] [controller_server-1] [WARN] [1795218005.046275871] [j100_0001.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[navigation_j100_0001-2] [controller_server-1] [WARN] [1795218005.046286892] [j100_0001.controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218005.046432567] [j100_0000.controller_server]: Received a goal, begin computing control effort.
+[navigation_j100_0000-1] [controller_server-1] [WARN] [1795218005.046465590] [j100_0000.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[navigation_j100_0000-1] [controller_server-1] [WARN] [1795218005.046474246] [j100_0000.controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218006.096385869] [j100_0001.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218006.096568415] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218007.146364336] [j100_0001.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218007.146568112] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218008.146392316] [j100_0001.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218008.146566897] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218009.196387551] [j100_0001.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218009.196572902] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218009.746413765] [j100_0001.controller_server]: Reached the goal!
+[navigation_j100_0001-2] [controller_server-1] [INFO] [1795218009.747580102] [j100_0001.controller_server]: Optimizer reset
+[navigation_j100_0001-2] [bt_navigator-6] [INFO] [1795218009.775751295] [j100_0001.bt_navigator]: Goal succeeded
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218010.196566060] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218011.246569074] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218012.246567658] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218013.296566118] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218014.296567872] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218015.346564164] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218016.346568747] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218017.396568190] [j100_0000.controller_server]: Passing new path to controller.
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218017.546601481] [j100_0000.controller_server]: Reached the goal!
+[navigation_j100_0000-1] [controller_server-1] [INFO] [1795218017.548035865] [j100_0000.controller_server]: Optimizer reset
+[navigation_j100_0000-1] [bt_navigator-6] [INFO] [1795218017.575869981] [j100_0000.bt_navigator]: Goal succeeded

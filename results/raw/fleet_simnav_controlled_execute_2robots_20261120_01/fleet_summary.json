@@ -1,0 +1,190 @@
+{
+  "robot_count": 2,
+  "execution_enabled": true,
+  "fleet_planning_passed": true,
+  "simultaneous_navigation_passed": true,
+  "dispatch_skew_s": 0.000114616,
+  "fleet_makespan_s": 12.650861641,
+  "common_action_overlap_s": 4.600835494,
+  "robot_results": {
+    "j100_0000": {
+      "namespace": "j100_0000",
+      "goal": {
+        "x": -2.0,
+        "y": 0.0,
+        "yaw_rad": 3.141592653589793,
+        "frame_id": "map"
+      },
+      "execution_enabled": true,
+      "sample_rate_hz": 10.0,
+      "planning": {
+        "accepted": true,
+        "acceptance_wall_s": 0.000536448998900596,
+        "status_code": 4,
+        "status": "SUCCEEDED",
+        "error_code": 0,
+        "error_msg": "",
+        "client_wall_duration_s": 0.0032869970018509775,
+        "client_sim_duration_s": 0.0,
+        "reported_planning_time_s": 0.0,
+        "pose_count": 79,
+        "path_length_m": 2.0207105828438556,
+        "direct_distance_m": 2.0006251180198475,
+        "path_length_ratio": 1.0100395944463039,
+        "endpoint_position_error_m": 0.0,
+        "endpoint_yaw_error_rad": 0.0
+      },
+      "navigation": {
+        "send_monotonic_ns": 32794488382788,
+        "accepted": true,
+        "acceptance_wall_s": 0.000489952,
+        "status_code": 4,
+        "status": "SUCCEEDED",
+        "error_code": 0,
+        "error_msg": "",
+        "terminal_observed_monotonic_ns": 32807139244429,
+        "client_wall_duration_s": 12.650861641,
+        "client_sim_duration_s": 12.654
+      },
+      "requires_manual_stop": false,
+      "completed": true,
+      "initial_map_pose": {
+        "stamp_ns": 1276161000000,
+        "x": 0.0012306155774601888,
+        "y": -0.04053549774544057,
+        "yaw_rad": -0.0023188094070808914
+      },
+      "initial_odometry": {
+        "stamp_ns": 1276170000000,
+        "x": -1.5158070630331207e-15,
+        "y": 4.180375806592273e-31,
+        "yaw_rad": -5.462257071288082e-16,
+        "linear_x_mps": -1.1581356018371408e-18,
+        "angular_z_radps": -8.355669366144784e-19
+      },
+      "final_map_pose": {
+        "stamp_ns": 1290822000000,
+        "x": -1.8771327909841629,
+        "y": 0.08112934956402115,
+        "yaw_rad": -2.974136404538626
+      },
+      "final_odometry": {
+        "stamp_ns": 1290828000000,
+        "x": -1.9524520832041565,
+        "y": 0.23422232337895374,
+        "yaw_rad": -3.0131509740546214,
+        "linear_x_mps": -2.253158342300772e-16,
+        "angular_z_radps": 9.773571240368304e-17
+      },
+      "sample_count": 196,
+      "feedback_count": 1264,
+      "max_recoveries": 0,
+      "odometry_trajectory_length_m": 2.233586277963552,
+      "odometry_trajectory_sample_count": 698,
+      "last_feedback": {
+        "distance_remaining_m": 0.24571096897125244,
+        "navigation_time_s": 12.63,
+        "number_of_recoveries": 0
+      },
+      "final_estimated_position_error_m": 0.14723560171379255,
+      "final_estimated_yaw_error_rad": 0.16745624905116707,
+      "stationary": true
+    },
+    "j100_0001": {
+      "namespace": "j100_0001",
+      "goal": {
+        "x": 3.0,
+        "y": 0.0,
+        "yaw_rad": 0.0,
+        "frame_id": "map"
+      },
+      "execution_enabled": true,
+      "sample_rate_hz": 10.0,
+      "planning": {
+        "accepted": true,
+        "acceptance_wall_s": 0.0015083090038388036,
+        "status_code": 4,
+        "status": "SUCCEEDED",
+        "error_code": 0,
+        "error_msg": "",
+        "client_wall_duration_s": 0.0038305790003505535,
+        "client_sim_duration_s": 0.006,
+        "reported_planning_time_s": 0.003,
+        "pose_count": 79,
+        "path_length_m": 2.0207102540973345,
+        "direct_distance_m": 2.000624653248834,
+        "path_length_ratio": 1.0100396647696426,
+        "endpoint_position_error_m": 0.0,
+        "endpoint_yaw_error_rad": 0.0
+      },
+      "navigation": {
+        "send_monotonic_ns": 32794488497404,
+        "accepted": true,
+        "acceptance_wall_s": 0.000468441,
+        "status_code": 4,
+        "status": "SUCCEEDED",
+        "error_code": 0,
+        "error_msg": "",
+        "terminal_observed_monotonic_ns": 32799089332898,
+        "client_wall_duration_s": 4.600835494,
+        "client_sim_duration_s": 4.605
+      },
+      "requires_manual_stop": false,
+      "completed": true,
+      "initial_map_pose": {
+        "stamp_ns": 1276161000000,
+        "x": 0.9874171188862687,
+        "y": -0.030111993017107007,
+        "yaw_rad": 0.003068577798830275
+      },
+      "initial_odometry": {
+        "stamp_ns": 1276170000000,
+        "x": -1.456602567524807e-15,
+        "y": 3.0313139647230208e-31,
+        "yaw_rad": -4.4022900979082785e-16,
+        "linear_x_mps": -1.2604274215075668e-18,
+        "angular_z_radps": -7.81898489418705e-20
+      },
+      "final_map_pose": {
+        "stamp_ns": 1290822000000,
+        "x": 2.7655960370864623,
+        "y": -0.08124171252031619,
+        "yaw_rad": 0.0685776750746607
+      },
+      "final_odometry": {
+        "stamp_ns": 1290828000000,
+        "x": 1.8484195071777598,
+        "y": 0.006094691843371105,
+        "yaw_rad": 0.054231915143324386,
+        "linear_x_mps": 3.614828108947205e-17,
+        "angular_z_radps": 1.2254848201498965e-18
+      },
+      "sample_count": 196,
+      "feedback_count": 459,
+      "max_recoveries": 0,
+      "odometry_trajectory_length_m": 1.8497358893710665,
+      "odometry_trajectory_sample_count": 315,
+      "last_feedback": {
+        "distance_remaining_m": 0.2707102298736572,
+        "navigation_time_s": 4.5809999999999995,
+        "number_of_recoveries": 0
+      },
+      "final_estimated_position_error_m": 0.2480835215865916,
+      "final_estimated_yaw_error_rad": 0.0685776750746607,
+      "stationary": true
+    }
+  },
+  "requires_manual_stop": false,
+  "error": null,
+  "limitations": [
+    "Preflight path requests are sequential",
+    "Navigation goals are dispatched without waiting for prior acceptance",
+    "Dispatch skew measures client calls, not DDS delivery or actuation skew",
+    "Action overlap measures client-observed intervals, not simultaneous physical motion",
+    "No centralized fleet traffic coordination",
+    "No independent continuous ground truth",
+    "Stationarity uses sampled odometry",
+    "Shared executor introduces instrumentation workload",
+    "Physical goal accuracy requires separate ground-truth analysis"
+  ]
+}

@@ -26,6 +26,14 @@ gui.local.yaml
 /config/jackal/robot.srdf
 /config/jackal/robot.srdf.xacro
 
+# Clearpath-generated fleet robot files
+/config/fleet/*/platform/
+/config/fleet/*/sensors/
+/config/fleet/*/manipulators/
+/config/fleet/*/robot.urdf.xacro
+/config/fleet/*/robot.srdf
+/config/fleet/*/robot.srdf.xacro
+
 # Python-generated files
 __pycache__/
 *.py[cod]

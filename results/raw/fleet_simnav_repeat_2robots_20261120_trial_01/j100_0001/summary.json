@@ -1,0 +1,83 @@
+{
+  "namespace": "j100_0001",
+  "goal": {
+    "x": 3.0,
+    "y": 0.0,
+    "yaw_rad": 0.0,
+    "frame_id": "map"
+  },
+  "execution_enabled": true,
+  "sample_rate_hz": 10.0,
+  "planning": {
+    "accepted": true,
+    "acceptance_wall_s": 0.0006776930022169836,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "client_wall_duration_s": 0.0065713989970390685,
+    "client_sim_duration_s": 0.006,
+    "reported_planning_time_s": 0.003,
+    "pose_count": 79,
+    "path_length_m": 2.0207102540973345,
+    "direct_distance_m": 2.000624653248834,
+    "path_length_ratio": 1.0100396647696426,
+    "endpoint_position_error_m": 0.0,
+    "endpoint_yaw_error_rad": 0.0
+  },
+  "navigation": {
+    "send_monotonic_ns": 33490720113965,
+    "accepted": true,
+    "acceptance_wall_s": 0.000439842,
+    "status_code": 4,
+    "status": "SUCCEEDED",
+    "error_code": 0,
+    "error_msg": "",
+    "terminal_observed_monotonic_ns": 33495471051110,
+    "client_wall_duration_s": 4.750937145,
+    "client_sim_duration_s": 4.755
+  },
+  "requires_manual_stop": false,
+  "completed": true,
+  "initial_map_pose": {
+    "stamp_ns": 407241000000,
+    "x": 0.9874212545359374,
+    "y": -0.030111980326504417,
+    "yaw_rad": 0.0030685777988311634
+  },
+  "initial_odometry": {
+    "stamp_ns": 407232000000,
+    "x": -4.697996041348473e-16,
+    "y": 2.8389644136138913e-32,
+    "yaw_rad": -1.235357018995282e-16,
+    "linear_x_mps": -6.977274745681148e-19,
+    "angular_z_radps": -5.061357000095771e-19
+  },
+  "final_map_pose": {
+    "stamp_ns": 421800000000,
+    "x": 2.8060486208148805,
+    "y": -0.07941485183343111,
+    "yaw_rad": 0.07887597079825497
+  },
+  "final_odometry": {
+    "stamp_ns": 421806000000,
+    "x": 1.8932861124343854,
+    "y": 0.020300920944993788,
+    "yaw_rad": 0.06582664560864114,
+    "linear_x_mps": 2.0162444768753487e-16,
+    "angular_z_radps": 1.945975885448081e-17
+  },
+  "sample_count": 169,
+  "feedback_count": 474,
+  "max_recoveries": 0,
+  "odometry_trajectory_length_m": 1.8950501491915628,
+  "odometry_trajectory_sample_count": 322,
+  "last_feedback": {
+    "distance_remaining_m": 0.2457103431224823,
+    "navigation_time_s": 4.731,
+    "number_of_recoveries": 0
+  },
+  "final_estimated_position_error_m": 0.20958019033185324,
+  "final_estimated_yaw_error_rad": 0.07887597079825497,
+  "stationary": true
+}

@@ -1,0 +1,20 @@
+world: warehouse
+
+robots:
+  - namespace: j100_0000
+    setup_path: j100_0000
+
+    spawn:
+      x: 0.0
+      y: 0.0
+      z: 0.3
+      yaw: 0.0
+
+  - namespace: j100_0001
+    setup_path: j100_0001
+
+    spawn:
+      x: 1.0
+      y: 0.0
+      z: 0.3
+      yaw: 0.0

@@ -1,0 +1,66 @@
+services:
+  fleet_simulation:
+    extends:
+      file: compose.yaml
+      service: simulation
+
+    container_name: amr-scalability-fleet-simulation
+
+    init: true
+
+    volumes:
+      - ./config/fleet:/etc/clearpath:rw
+      - ./launch:/opt/amr/launch:ro
+
+    entrypoint:
+      - /bin/bash
+      - -lc
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch
+        /opt/amr/launch/fleet_simulation.launch.py
+        fleet_config:=/etc/clearpath/fleet.yaml
+        headless:=false
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s
+
+  fleet_localization:
+    extends:
+      file: compose.navigation.yaml
+      service: localization
+
+    container_name: amr-scalability-fleet-localization
+
+    volumes:
+      - ./config/fleet:/etc/clearpath:ro
+      - ./launch:/opt/amr/launch:ro
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch
+        /opt/amr/launch/fleet_localization.launch.py
+        fleet_config:=/etc/clearpath/fleet.yaml
+
+  fleet_navigation:
+    extends:
+      file: compose.navigation.yaml
+      service: navigation
+
+    container_name: amr-scalability-fleet-navigation
+
+    volumes:
+      - ./config/fleet:/etc/clearpath:ro
+      - ./launch:/opt/amr/launch:ro
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch
+        /opt/amr/launch/fleet_navigation.launch.py
+        fleet_config:=/etc/clearpath/fleet.yaml
