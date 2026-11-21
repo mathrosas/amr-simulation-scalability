@@ -1,0 +1,96 @@
+services:
+  rmf_schedule:
+    build:
+      context: ./docker/rmf
+      dockerfile: Dockerfile
+
+    image: amr-scalability-rmf:jazzy
+
+    container_name: amr-scalability-rmf-schedule
+
+    network_mode: host
+    ipc: host
+
+    init: true
+
+    environment:
+      ROS_DOMAIN_ID: "0"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+
+    entrypoint:
+      - /bin/bash
+      - -lc
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 run rmf_traffic_ros2 rmf_traffic_schedule
+        --ros-args -p use_sim_time:=true
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s
+
+  rmf_dispatcher:
+    image: amr-scalability-rmf:jazzy
+
+    container_name: amr-scalability-rmf-dispatcher
+
+    network_mode: host
+    ipc: host
+
+    init: true
+
+    environment:
+      ROS_DOMAIN_ID: "0"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+
+    entrypoint:
+      - /bin/bash
+      - -lc
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 run rmf_task_ros2 rmf_task_dispatcher
+        --ros-args -p use_sim_time:=true
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s
+
+  rmf_fleet_adapter:
+    image: amr-scalability-rmf:jazzy
+    container_name: amr-scalability-rmf-fleet-adapter
+
+    network_mode: host
+    ipc: host
+    init: true
+
+    environment:
+      ROS_DOMAIN_ID: "0"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+
+    volumes:
+      - ./scripts:/opt/amr/scripts:ro
+      - ./config/fleet:/opt/amr/fleet:ro
+      - ./config/rmf:/opt/amr/rmf:ro
+
+    entrypoint: ["/bin/bash", "-lc"]
+
+    command:
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        export PYTHONDONTWRITEBYTECODE=1 &&
+        export PYTHONPATH="/opt/amr/scripts:$${PYTHONPATH:-}" &&
+        exec python3 -u /opt/amr/scripts/rmf_fleet_adapter.py
+        --fleet /opt/amr/fleet/fleet.yaml
+        --rmf-config /opt/amr/rmf/fleet_adapter.yaml
+        --graph /opt/amr/rmf/nav_graph.yaml
+
+    healthcheck:
+      disable: true
+
+    stop_grace_period: 30s

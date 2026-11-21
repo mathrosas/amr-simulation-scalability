@@ -1,0 +1,74 @@
+# Open-RMF navigation graph
+# AMR Simulation Scalability Project
+#
+# Map: Clearpath Warehouse
+# Frame: map
+# Units: meters
+#
+# Initial two-robot fleet topology.
+# Each travel direction is represented by an explicit lane.
+#
+# Physical lane clearance validation pending.
+
+building_name: clearpath_warehouse
+
+levels:
+  warehouse:
+
+    vertices:
+      # Central corridor
+      # Provisional RMF charger for registration testing.
+      # No physical charging capability is implemented.
+      - [-4.0, 0.0, {name: west_end, is_charger: true}]
+      - [-2.0,  0.0, {name: west_goal}]
+      - [ 0.0,  0.0, {name: robot_0000_start}]
+      - [ 1.0,  0.0, {name: robot_0001_start}]
+      - [ 3.0,  0.0, {name: east_goal}]
+      - [ 5.0,  0.0, {name: east_end}]
+
+      # Northern route
+      - [-2.0,  3.0, {name: north_west}]
+      - [ 3.0,  3.0, {name: north_east}]
+
+      # Southern route
+      - [-2.0, -3.0, {name: south_west}]
+      - [ 3.0, -3.0, {name: south_east}]
+
+    lanes:
+      # Central corridor
+      - [0, 1, {}]
+      - [1, 0, {}]
+
+      - [1, 2, {}]
+      - [2, 1, {}]
+
+      - [2, 3, {}]
+      - [3, 2, {}]
+
+      - [3, 4, {}]
+      - [4, 3, {}]
+
+      - [4, 5, {}]
+      - [5, 4, {}]
+
+      # Northern route
+      - [1, 6, {}]
+      - [6, 1, {}]
+
+      - [6, 7, {}]
+      - [7, 6, {}]
+
+      - [7, 4, {}]
+      - [4, 7, {}]
+
+      # Southern branch
+      # Accessible through east_goal.
+      # West-side connection excluded due to insufficient clearance.
+      - [8, 9, {}]
+      - [9, 8, {}]
+
+      - [9, 4, {}]
+      - [4, 9, {}]
+
+doors: {}
+lifts: {}

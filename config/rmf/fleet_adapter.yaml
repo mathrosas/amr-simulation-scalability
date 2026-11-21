@@ -1,0 +1,65 @@
+# Open-RMF fleet configuration
+# AMR Simulation Scalability Project
+#
+# Initial integration configuration for the Clearpath J100 fleet.
+#
+# Robot identities and initial positions are defined separately in:
+# config/fleet/fleet.yaml
+
+rmf_fleet:
+
+  name: j100_fleet
+
+  # Nominal planning limits
+  limits:
+    linear: [0.5, 0.5]
+    angular: [1.9, 1.0]
+
+  # Circular robot profile
+  profile:
+    footprint: 0.35
+    vicinity: 0.50
+
+  reversible: false
+
+  # Preliminary simulation parameters.
+  # These are not verified Jackal hardware specifications.
+  battery_system:
+    voltage: 24.0
+    capacity: 20.0
+    charging_current: 5.0
+
+  mechanical_system:
+    mass: 20.0
+    moment_of_inertia: 10.0
+    friction_coefficient: 0.22
+
+  ambient_system:
+    power: 20.0
+
+  tool_system:
+    power: 0.0
+
+  # Battery simulation disabled for the initial RMF baseline.
+  account_for_battery_drain: false
+
+  recharge_threshold: 0.10
+  recharge_soc: 1.0
+
+  # Initial task capability
+  task_capabilities:
+    patrol: true
+
+  finishing_request: nothing
+
+  # Preserve explicit orientation commands.
+  skip_rotation_commands: false
+
+  # Disable automatic responsive waiting initially.
+  responsive_wait: false
+
+  publish_fleet_state: 2.0
+  max_delay: 10.0
+
+  # Populated dynamically from config/fleet/fleet.yaml.
+  robots: {}
